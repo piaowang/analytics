@@ -1,0 +1,21 @@
+title 智能营销
+link(rel='stylesheet', href=cdn + '/css/nissan-market.styles.css?' + version)
+include includes/head1
+include includes/head2
+#container
+#content-loading
+  .spinner
+    .bounce1
+    .bounce2
+    .bounce3
+
+include includes/footer-js
+include includes/root-fontsize
+
+script(src=cdn + '/_bc/echarts/dist/echarts' + tail + '.js' + '?' + version)
+script(src=cdn + '/_bc/d3/dist/d3' + tail + '.js' + '?' + version)
+script(src=cdn + '/_bc/moment/min/moment.min.js' + '?' + version)
+script(src=cdn + '/_bc/moment/locale/zh-cn.js' + '?' + version)
+script(onload='window.sugo.onload()', src=cdn + '/js/nissan-market.bundle.js' + '?' + version)
+script(src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js')
+include includes/footer-end

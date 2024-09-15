@@ -1,0 +1,20 @@
+include includes/head1
+title 产品激活 - #{siteName}
+link(rel='stylesheet', href=cdn + '/css/login.styles.css?' + version)
+include includes/head2
+include includes/browser-alert
+#container
+#content-loading
+  .spinner
+    .bounce1
+    .bounce2
+    .bounce3
+
+include includes/footer-js
+script(src=cdn + '/_bc/moment/min/moment.min.js' + '?' + version)
+script(src=cdn + '/_bc/moment/locale/zh-cn.js' + '?' + version)
+script.
+  window.sugo.registrationCode = '#{registrationCode}'
+  window.sugo.licenseError = '#{licenseError}'
+script(onload='window.sugo.onload()', src=cdn + '/js/verify.bundle.js' + '?' + version)
+include includes/footer-end

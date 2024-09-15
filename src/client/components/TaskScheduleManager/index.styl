@@ -1,0 +1,97 @@
+
+.task-schedule-manager 
+  background #e4eaef
+  .task-tree-panel 
+    padding 10px 5px 10px 10px
+  .task-details-panel 
+    padding 10px 10px 10px 5px
+  .ant-tree li 
+    min-width 100%
+    max-width 100%
+    vertical-align top
+    overflow hidden
+    white-space nowrap
+    text-overflow ellipsis
+    padding-right 15px
+  .task-tree 
+    height calc(100% - 44px - 32px)
+  .creating-kind-title 
+    margin-left 76px
+    opacity 0.99
+    padding 0 5px
+  .line-through-effect 
+    &before 
+      width calc(100% - 24px)
+      display block
+      position absolute
+      content '\00a0'
+      //width $max-wrapper-width
+      margin-top 8px
+      border-top 1px solid #e7e7e7
+  .task-editor 
+    a 
+      color #1890ff
+      text-decoration none 
+    .ant-tabs, .ant-tabs-content 
+      height 100%
+    .scroll-inside
+      height calc(100% - 56px)
+      overflow-y scroll
+      padding-right 10px
+  .task-table-container
+    padding 16px 32px
+    background #fff
+  .tree-search-box
+    padding 0 12px 10px
+  .ant-tabs-nav-container
+    .ant-tabs-nav
+      .ant-tabs-tab
+        div 
+          font-size 14px
+  .carousel-box
+    margin-bottom 20px
+    .item-rol-title 
+      padding-top 10px
+    .schedule-list-container
+      padding-top 10px
+      width 100%
+      height 300px
+      overflow auto
+    .ant-carousel
+      border 1px solid #cccccc
+      border-radius 5px
+    .text-box
+      font-weight bold
+      font-size 13px
+      float right
+      padding-right 8px
+    .no-schedule
+      text-align center
+      line-height 250px
+    .schedule-item
+      position relative
+      float left
+      width 400px
+      height 270px
+      border 1px solid #ccc
+      margin 0 15px 15px 0
+      border-radius 5px
+      .cron-row
+        &>div 
+          margin-bottom 10px
+      .add-cron
+        cursor cell
+        text-align center
+        line-height 250px
+        &>i:before
+          font-size 24px
+      .close-btn
+        // border 1px solid #ddd
+        position absolute
+        top -10px
+        right -6px 
+        color #fff
+        width 20px
+        height 20px
+        text-align center
+        border-radius 50%

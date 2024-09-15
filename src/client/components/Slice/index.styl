@@ -1,0 +1,26 @@
+
+
+.user-guide-tip
+  background #f2dede
+  padding 8px 10px
+  border-radius 3px
+  line-height 14px
+  position relative
+  color #a94442
+  &:after
+    content ""
+    position absolute
+    border-style solid
+    display block
+    width 0
+    top 6px
+    left -6px
+    bottom auto
+    border-width 8px 6px 8px 0
+    border-color transparent #f2dede
+  &.top-tip:after
+    border-width 0 8px 8px
+    border-color #f2dede transparent
+    top -6px
+    left 10px
+

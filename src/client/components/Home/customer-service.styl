@@ -1,0 +1,109 @@
+.icon-control-wrap
+  position: fixed
+  right 32px
+  bottom 35px
+  z-index 200
+
+.fixed-icon
+  width 47px
+  height 47px
+  text-align: center
+  line-height: 46px
+  display block
+  background: colorMain
+  border-radius: 46px
+  color #eee
+  font-size 23px
+  box-shadow 0 0 3px 3px rgba(125,127,230,.2)
+  &:hover
+    color #fff
+    cursor: pointer
+
+.help-link-right
+  margin-bottom 20px
+
+.hide-help-icon .fixed-icon
+  display none
+
+.customer-service-btn
+  width 100%
+  background #fff
+  height 40px
+  color #999
+  border-color #aaa
+  .on-hover
+    display none
+
+  &:hover
+    color #fff
+    border-color colorMain
+    background colorMain
+    .on-hover
+      display inline-block
+    .normal
+      display none
+.project-select-drawer
+  .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left
+    border none
+  .ant-menu-vertical .ant-menu-item:after, .ant-menu-vertical-left .ant-menu-item:after, .ant-menu-vertical-right .ant-menu-item:after, .ant-menu-inline .ant-menu-item:after
+    border-right none
+  .ant-menu-vertical .ant-menu-item:not(:last-child), .ant-menu-vertical-left .ant-menu-item:not(:last-child), .ant-menu-vertical-right .ant-menu-item:not(:last-child), .ant-menu-inline .ant-menu-item:not(:last-child)
+    margin-bottom 0
+  .ant-menu-item
+    border-bottom 1px solid #eeeeee
+    margin-bottom 0
+    padding-bottom 0
+    margin-top 0
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected
+    background none
+  .ant-drawer-body
+    padding 0
+
+.project-select-drawer-handle
+  position absolute
+  top 240px
+  right 2px
+  z-index 1000
+  align-items center
+  justify-content center
+  width 55px
+  text-align center
+  cursor pointer
+  pointer-events auto
+  color #FBFBFB
+  .text
+    font-weight 400
+    width 55px
+    max-height 160px
+    background #6969D7
+    padding 3px 6px
+    border-radius 4px 0px 0px 0px
+    align-items center
+    justify-content center
+    text-align center
+    cursor pointer
+    opacity 0.8
+    .content
+      text-overflow ellipsis
+      overflow hidden
+      padding 8px 0 8px 0
+      width 18px
+      margin 0 auto
+      word-wrap break-word
+      word-break break-all
+      display -webkit-box
+      -webkit-box-orient vertical
+      -webkit-line-clamp 6
+  .icon
+    margin-top 2px
+    background #5F5F5F
+    width 55px
+    height 44px
+    opacity 0.8
+    border-radius 0px 0px 0px 4px
+  .mini-icon
+    background #6969D7
+    width 20px
+    height 44px
+    opacity 0.8
+    border-radius 4px 0px 0px 4px

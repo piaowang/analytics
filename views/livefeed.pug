@@ -1,0 +1,24 @@
+include includes/head1
+title #{livefeedOptions.title}
+link(rel='stylesheet', href=cdn + '/css/lf.styles.css?' + version)
+link(rel='stylesheet', href=cdn + '/_bc/wxj-livefeed/fonts/stylesheet.css?' + version)
+include includes/head2
+include includes/browser-alert
+#container
+#content-loading
+  .spinner
+    .bounce1
+    .bounce2
+    .bounce3
+
+include includes/footer-js
+script.
+  window.sugo.livefeedOptions = !{serialize(livefeedOptions)}
+  window.sugo.livefeedOptionsStr = `#{livefeedOptionsStr}`
+script(src=cdn + '/_bc/moment/min/moment.min.js' + '?' + version)
+script(src=cdn + '/_bc/jquery/dist/jquery.min.js' + '?' + version)
+script(src=cdn + '/_bc/moment/locale/zh-cn.js' + '?' + version)
+script(src=cdn + '/_bc/echarts/dist/echarts' + tail + '.js' + '?' + version)
+script(src=cdn + '/_bc/wxj-livefeed/data/china.js' + '?' + version)
+script(onload='window.sugo.onload()', src=cdn + '/js/lf.bundle.js' + '?' + version)
+include includes/footer-end

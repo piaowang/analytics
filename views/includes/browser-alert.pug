@@ -1,0 +1,29 @@
+- if (enableBrowserAlert && ua && !ua.okChrome)
+  #browser-alert.bg-red.color-white.hide
+    #browser-alert-content.pd1.font14
+      | 您正在使用
+      b #{ua.chrome?'':'非'}谷歌浏览器
+      |，版本
+      b #{ua.browserVersion}
+      |，某些功能可能不可用，推荐使用
+      b 谷歌浏览器版本52
+      | 以上
+      button.ant-btn.ant-btn-danger.ant-btn-lg.mg1l(onClick='window._onHideBrowserAlertSugo()') 我知道了
+  script.
+    (function() {
+      var ls = window.localStorage || {
+        getItem: function() {return null},
+        setItem: function() {return null}
+      }
+      var lsId = 'sugo-hide-browser-alert'
+      var dom = document.getElementById('browser-alert')
+      window._onHideBrowserAlertSugo = function() {
+        ls.setItem(lsId, 'yes')
+        document.getElementById("browser-alert").removeChild(document.getElementById("browser-alert-content"))
+      }
+      if (ls.getItem(lsId) !== 'yes') {
+        dom.className = 'bg-red color-white'
+        setTimeout(window._onHideBrowserAlertSugo, 12000)
+      }
+    })()
+

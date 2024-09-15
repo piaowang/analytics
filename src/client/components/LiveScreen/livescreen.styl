@@ -1,0 +1,504 @@
+// 公共变量
+$primary-font-color = #504762
+$border-color = #E8ECF2
+$top-height = 100px  // 头部占用高度，以后改成独立页面改成0
+$img-path = "../../../../node_modules/sugo-analytics-static/assets/images/livescreen/grid2.png"
+
+// 大屏列表
+.screen-list-box
+  display: flex
+  .left-wrap
+    flex: 1
+  .screen-list
+    width calc(100vw - 16px)
+    .screen
+      overflow: hidden
+      margin: 10px 13px
+      position: relative
+      background: #FFF
+      box-shadow: 0 0 4px 0 rgba(67, 87, 101, 0.1)
+      float: left
+      height: 230px
+      .authorization-type-icon
+        position: absolute
+        top: 10px
+        left: 10px
+        color: #fff
+      .screen_new_link
+        width: 200px
+        padding: 40px 0 0
+        height 230px
+        background: #FFF
+        border: 2px dashed #B2C1D5
+        display: inline-block
+        text-align: center
+        font-size: 16px
+        text-decoration: none
+        color: #7F93AE
+        border-radius: .5px
+        &:hover
+          border-color: $primary-font-color
+          text-decoration: none
+          color: $primary-font-color
+          i
+            color: $primary-font-color
+        .anticon
+          color: #A4B7D0
+          font-size: 109px
+          display: block
+      .image-wrap
+        width: 200px
+        height: 150px
+        overflow: hidden
+        background-color: #0f2a42
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+          width: 100%
+        .mask
+          display: none
+          background: rgba(0,0,0,.5)
+          top: 0
+          left: 0
+          position: absolute
+          width: 200px
+          height: 150px
+          .edit-wrap
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            .edit
+              position: absolute
+              left: 0
+              right: 0
+              top: 0
+              bottom: 0
+              margin: auto
+              width: 100px
+              height: 32px
+          .moveout
+            position: absolute
+            top: 10px
+            right: 35px
+            color: #fff
+            cursor: pointer
+            &:hover
+              color: $primary-font-color
+            i
+              font-size: 16px
+          .delete
+            position: absolute
+            top: 10px
+            right: 10px
+            color: #fff
+            cursor: pointer
+            &:hover
+              color: $primary-font-color
+            i
+              font-size: 16px
+
+        &:hover
+          .mask
+            display: block
+      .screen-bottom-wrap
+        padding: 0 10px
+        .screen_bottom
+          width: 100%
+          line-height: 30px
+          height: 30px
+          position: relative
+          white-space: nowrap
+          margin-top: 8px
+          padding-bottom: 3px
+          border-bottom: 1px solid $border-color
+          color: #B2C1D5
+          cursor: pointer
+          &:hover
+            color: $primary-font-color
+          span
+            font-size: 20px
+            margin-right: 1px
+            margin-top 5px
+          div
+            position: relative
+            left: 5px
+            width: 154px
+            margin: 0
+            color: #666
+            font-size: 14px
+            text-overflow: ellipsis
+            overflow: hidden
+            white-space: nowrap
+            &:hover
+              color: $primary-font-color
+          input
+            width: 154px
+            height: 30px
+            border: 0
+            background: #d9edff
+            padding: 0 5px
+            font-size: 14px
+            color: $primary-font-color
+            outline: 0
+      .screenActions
+        .screen-status
+          position absolute
+          margin-top 10px
+        ul
+          margin-bottom: 0
+          height: 40px
+          line-height: 40px
+          li
+            float: right
+            font-size: 12px
+            cursor: pointer
+            color: #7F93AE
+            margin-right: 15px
+            list-style none
+            i
+              font-size: 13px
+              margin-right: 4px
+            .ant-switch
+              vertical-align: sub
+            &:hover
+              i,span
+                color: #9a76ab
+
+
+// 大屏工作台
+.screen-workbench
+  width: 100vw
+  background: url($img-path)
+  background-size: 14px 14px
+  overflow: hidden
+  // workbench 一些通用的样式
+  p
+    height: 20px
+    line-height: 20px
+    font-size: 13px
+  .bottom-line
+    border-bottom: 1px solid #282f3a
+  .back-icon
+    font-size: 22px
+    margin-right: 10px
+    line-height: 30px
+    color: rgba(0, 0, 0, 0.65);
+    &:hover
+      color: #9a76ab
+  .icon-wrapper
+    position: relative
+    padding: 0px 20px
+    .anticon
+      position: absolute
+      top: 8px
+      width: 16px
+      height: 16px
+      line-height: 1
+      font-size: 16px
+    .anticon
+      &:first-child
+        left: 0
+      &:last-child
+        right: 0
+  // 覆盖默认的滚动条样式
+  ::-webkit-scrollbar
+      display: none
+      background-color: #fff
+      &:horizontal
+        height: 6px
+      &:vertical
+        width: 6px
+
+  ::-webkit-scrollbar-thumb
+      border-radius: 4px
+      background-color: #656565
+
+  // 图表面板
+  #chart-panel
+    position: absolute
+    color: #666
+    z-index: 9
+    .ant-upload.ant-upload-drag
+      height: calc(100% - 20px)
+      p.ant-upload-drag-icon
+        height: 44px
+        margin-bottom: 0
+        .anticon
+          font-size: 44px
+  .layer-list
+    position: absolute
+    top: -1px
+    height: calc(100vh - 91px)
+    min-height: 600px
+    overflow-y: auto
+    transition: left .3s
+    background-color #222528
+    .ant-tabs-bar
+      margin-bottom: 0
+    .ant-tabs-tab
+      margin-right: 0
+      width: 120px
+    &.switch-on
+        left: 0
+  // 图表组
+  .charts
+    width: 185px
+    left: -185px
+  .chart-box
+    min-height: 400px
+    height: "calc(100vh - 435px - %s)" % $top-height
+    overflow: hidden
+    .chart-item
+      border-color: #DCDEE3
+      border-style: solid
+      border-top: 0
+      border-right: 0
+      border-left-width: 1px
+      border-bottom-width: 1px
+      height: 100px
+      line-height: 16px
+      width: 80px
+      overflow: hidden
+      text-overflow: ellipsis
+      color: #aaa
+      padding: 16px
+      font-size: 0
+      text-align: center
+      img
+        transition: transform 0.3s
+      &.width-right
+        border-right: 1px solid #DCDEE3
+      &:hover
+        cursor: pointer
+        color: $primary-font-color
+        img
+          transform: scale(1.15)
+        p
+          color: $primary-font-color
+      img
+        width: 35px
+        height: 35px
+      p
+        margin: auto -10px
+
+  #editor
+    position: absolute
+    background: #222528
+    width: 300px
+    height: calc(100vh - 91px)
+    min-height: 600px
+    top: -1px
+    right: -300px
+    overflow: hidden
+    transition: right .3s
+    color #bcc9d4
+    .compontent-name
+      padding 8px
+      background-color #2E343C
+      color #bcc9d4
+    &.switch-on
+      right: 0
+    // 编辑属性面板覆盖ant一些样式
+    .ant-tabs-bar
+      margin-bottom: 0
+    .ant-tabs-tab
+      margin-right: 0
+      width: 135px
+      text-align: center
+    .ant-tabs-tabpane
+      height: "calc(100vh - 90px - %s)" % $top-height
+      overflow-x: hidden
+      overflow-y: scroll
+    .ant-form-item-label
+      line-height: 20px
+      padding: 0
+    .ant-collapse-content-box > div
+        padding 8px 0
+        border-bottom 1px solid #282f3a
+    .subGroup
+      &-header
+        font-size 14px
+      &-content > div
+          padding 8px 0
+          // border-bottom 1px solid #DCDEE3
+    .tab-icon 
+      color #00BAFF
+  // 组件属性设置面板
+  .attr-scroll-container
+    overflow-x: hidden
+    overflow-y: scroll
+    height: 100%
+  // 组件的基本名称信息栏
+  .com-info {
+    position: absolute
+    top: 36px
+    width: 100%
+    padding: 12px 14px
+    font-size: 16px
+    font-weight: 400
+    background: #fff
+  }
+
+  // 中间的面板
+  #center-panel
+    position: absolute
+    top: 0
+    width: calc(100% - 512px)
+    overflow: auto
+    &:hover::-webkit-scrollbar
+      display: block
+  #preview-container
+    box-sizing: content-box
+  #screenshot
+    width: 100%
+    height: 100%
+  #preview
+    user-select: none
+    position: relative
+    transform-origin: 0 0
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+    .-screen-com 
+      cursor: pointer
+      border: 1px solid rgba(255,255,255, 0)
+      &.active:after
+        z-index: 999
+      &.active:after, &:hover:after
+        content: ''
+        position: absolute
+        left: 0
+        display: block
+        top: 0
+        height: 100%
+        width: 100%
+      &.hover, &:hover:after
+        border: 1px solid #8747ff
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.5)
+        background: rgba(181, 55, 255, 0.1)
+
+  #preview,#preview-container
+    transition: all .3s linear
+    height: 100%
+    width: 100%
+  // 已放置组件组
+  .components
+    width: 130px
+    left: -130px
+
+  // 浮动切换面板显示/隐藏的小方框
+  .switch-item
+    position: absolute
+    width: 13px
+    height: 100px
+    line-height: 100px
+    z-index: 1
+    top 40vh
+    color: rgba(239, 239, 244,.8)
+    background: center center no-repeat #474747
+    font-size: 13px
+    border: 1px solid rgba(0,0,0,.1)
+
+  .switch-for-charts
+    left: 0
+    border-left: none
+    border-radius: 0 4px 4px 0
+    transition: left .3s
+    // &:before
+    //   font-weight: bold
+    //   display: block
+    //   font-family: "anticon" !important
+    //   content: "\E617"
+    &.switch-on
+      left: 241px
+      // &:before
+      //   content: "\E618"
+
+
+  .switch-for-editor
+    right: 0
+    border-right: none
+    border-radius: 4px 0 0 4px
+    transition: right .3s
+    // &:before
+    //   font-weight: bold
+    //   display: block
+    //   font-family: "anticon" !important
+    //   content: "\E618"
+    &.switch-on
+      right: 300px
+      // &:before
+      //   content: "\E617"
+
+// 布局区域
+.screen-layout
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1
+  .-screen-com
+    position: absolute!important
+    margin: 0!important
+  .-screen-wraper > div
+    overflow: hidden
+  .common-alert
+    font-size: 28px !important
+    &,i
+      color: #ddd !important
+  // 覆盖table样式
+  .ant-table
+    color: #fff
+    border-radius: 0
+    .ant-table-header
+      margin-bottom 0 !important
+    tr,th,td,.ant-table-header,.ant-table-body
+      background-color: transparent !important
+    .ant-table-thead > tr > th
+      color: #fff
+  .row-ov
+    border-color #00CAEA
+  // 覆盖总计样式
+  .bigNumberChart
+    padding 0
+    h1,.metric-name
+      color: #fff
+
+// 拖放调整尺寸工具层
+.transform-tool
+  // position: absolute!important
+  // z-index: 100000!important
+  // cursor: move!important
+  overflow: hidden
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.5)
+  border: solid 1px #8747ff
+/*  &,div
+    background: 0 0!important*/
+  .tools
+    position: absolute
+    right: 0
+    top: 0
+    a
+      display: inline-block
+      text-align: center
+      width: 30px
+      line-height: 26px
+      font-size: 20px
+      background #a3a4c3
+      &:hover
+        background-color: #4bf
+
+
+//就广铁用了
+// .ant-modal-body
+//   .ant-table
+//   color: #fff
+//   border-radius: 0
+//   .ant-table-header
+//     margin-bottom 0 !important
+//   tr,th,td,.ant-table-header,.ant-table-body
+//     background-color: transparent !important
+//   .ant-table-thead > tr > th
+//     color: #fff

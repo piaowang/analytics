@@ -1,0 +1,63 @@
+- if (licenseValid)
+  #license-alert.bg-red.color-white.hide
+    #license-alert-content.pd1.font14.mg2l
+      b.
+      | 您的序列号距离到期时间还有
+      b #{licenseExpireTime.days + 1}
+      | 天，请联系我们进行
+      a.ant-btn.ant-btn-danger2.ant-btn-lg.mg1l(href='/verify-page') 产品升级
+      button.ant-btn.ant-btn-danger2.ant-btn-lg.mg1l(onClick='window._onHideLicenseAlertSugo()') 我知道了
+  script.
+    (function() {
+      var expireDays = #{licenseExpireTime.days} || 0
+      var ls = window.localStorage || {
+        getItem: function() {return null},
+        setItem: function() {return null}
+      }
+      var currentDate = new Date()
+      var addDays = function(date, days) {
+        date.setDate(date.getDate() + days);
+        return date
+      }
+      var to2Digit = function(num) {
+        return ('0' + num).slice(-2)
+      }
+      var formatDate = function(d) {
+        return d.getFullYear() + '-' + to2Digit(d.getMonth() + 1) + '-' + to2Digit(d.getDate());
+      }
+      var lsId = 'sugo-hide-license-alert'
+      var rootDOM = document.getElementById('license-alert')
+      if (!ls.getItem(lsId)) {
+        ls.setItem(lsId, expireDays + ':' + formatDate(currentDate) + ':no')
+      }
+      var data = ls.getItem(lsId), nextDate = currentDate
+      if (data !== '') {
+        data = data.split(':')
+        var _days = parseInt(data[0], 10)
+        if (expireDays !== _days) { // 产品升级后更新了天数
+          _days = expireDays
+          ls.setItem(lsId, expireDays + ':' + formatDate(currentDate) + ':no')
+        }
+        expireDays = _days
+        nextDate = new Date(data[1])
+      }
+      var flag = formatDate(currentDate) === formatDate(nextDate) && data[2] === 'no'
+      if ((expireDays >= 7 && expireDays <= 30) && flag) {
+        rootDOM.style.display = 'block'
+      } else if ((expireDays < 7) && flag) {
+        rootDOM.style.display = 'block'
+      }
+
+      window._onHideLicenseAlertSugo = function() {
+        // 判断序列号距离到期时间 7~30 天，每周提醒一次。如距离到期时间为 30 天的是周三，那么周三提醒一次，下周三提醒一次，下下周三提醒一次。 (共三次)
+        // 判断序列号距离到期时间 1~7 天，每天提醒一次。
+        var curDate = new Date()
+        if (expireDays >= 7 && expireDays <= 30) {
+          curDate = addDays(curDate, 7); // 一周后在提醒
+        } else if (expireDays < 7) {
+          curDate = addDays(curDate, 1); // 一周后在提醒
+        }
+        ls.setItem(lsId, expireDays + ':' + formatDate(curDate) + ':no') // 设置下一次提醒参数
+        rootDOM.removeChild(document.getElementById("license-alert-content"))
+      }
+    })()

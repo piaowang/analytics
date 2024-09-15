@@ -1,0 +1,24 @@
+.ant-row{
+  .checkbox{
+      position: relative
+      i{
+        position: absolute;
+        opacity: 0
+        right: 6px;
+        top: 1px;
+      }
+    }
+  .has-success, .has-error{
+    .checkbox{
+      i{
+        opacity: 1;
+      }
+      .anticon-check-circle:before{
+        color: #52c41a;
+      }
+      .anticon-close-circle:before{
+        color: #f5222d;
+      }
+    }
+  } 
+}

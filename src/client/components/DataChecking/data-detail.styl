@@ -1,0 +1,102 @@
+.base-info-wrap
+  display flex
+  justify-content center
+  align-items center
+  .base-info
+    width 900px
+    display flex
+    flex-wrap wrap
+    align-items center
+    justify-content flex-start
+    .base-info-item
+      display flex
+      flex-wrap nowrap
+      justify-content center
+      align-items center
+
+      .base-info-item-label
+        box-sizing border-box
+        width 100px
+        height 50px
+        text-align center
+        line-height 50px
+        background rgba(242, 242, 242, 1)
+        border 1px solid rgba(204, 204, 204, 1)
+        border-right none 
+        font-weight bold
+      .base-info-item-value
+        box-sizing border-box
+        width 200px
+        height 50px
+        text-align center
+        line-height 50px
+        border 1px solid rgba(204, 204, 204, 1)
+
+.check-info-yard-wrap
+  width: 100%
+  display flex
+  flex-flow: column
+  justify-content: center
+  align-items: center
+  .check-info-title
+    width: 100px
+    height 50px
+    margin-bottom: -25px
+    margin-right: 750px
+    text-align: center
+    line-height: 50px
+    font-weight: bold
+    background: #fff
+    font-size: 16px
+    z-index: 2
+  .check-info-yard
+    width: 900px
+    border 1px solid rgba(204, 204, 204, 1)
+    z-index: 1
+
+
+.check-info-list
+  display flex
+  flex-flow column
+  justify-content center
+  align-items center
+  padding: 20px
+  padding-bottom: 40px
+  .check-info-list-item
+    display flex
+    flex-wrap nowrap
+    margin-top: 30px
+    .check-info-list-item-label
+      width 200px
+      text-align center
+      display: flex
+      justify-content: center
+      align-items: center
+      background rgba(242, 242, 242, 1)
+      border 1px solid rgba(204, 204, 204, 1)
+      border-right none 
+      font-weight bold
+    .check-info-list-item-value
+      width 400px
+      min-height 50px
+      display: flex
+      justify-content: center
+      align-items: center
+      border 1px solid rgba(204, 204, 204, 1)
+      padding: 10px
+
+.notice-title
+  width 120px
+  height 50px
+  line-height: 50px
+  font-weight: bold
+  position relative
+  font-size: 16px
+  &:before
+    position absolute
+    content: ''
+    width: 4px
+    height 20px
+    background: red
+    top: 15px
+    left -12px

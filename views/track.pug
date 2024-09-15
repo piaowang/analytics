@@ -1,0 +1,32 @@
+include includes/head1
+title 埋点圈选
+style
+  include index.css
+
+<div id='main_div' style='text-align:center;font-size:50px;'>
+//- <a class='ant-btn ant-btn-primary ant-btn-icon-only ant-btn-lg' href='#{track_uri}' style='margin-top:100px'><i class='anticon anticon-poweroff'></i> 打开app</a>
+
+<img class="title_img" alt="公司logo" src="/_bc/sugo-analytics-static/assets/images/track/track_title.png" />
+<img class="lose_img" alt="开启圈选不成功" src="/_bc/sugo-analytics-static/assets/images/track/track_ikon.png" />
+
+<div class="launch-btn-container"><a id="msg" class="launch-btn" href='#{track_uri}'>打开app</a></div>
+<div class="failed-box">
+<div class="failed-tip-title">开启圈选不成功？可能的原因有:</div>
+<div class="hr-line"></div>
+<ul id="failed-ul">
+<li>您的手机没有安装待圈选的App</li>
+<li>您选择的项目或平台与当前手机安装的App不匹配</li>
+<li>您当前的手机和电脑不在统一个WIFI局域网下</li>
+</ul>
+</div>
+</div>
+script.
+   var ua = window.navigator.userAgent.toLowerCase();
+   if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+       document.getElementById('msg').innerHTML = "请用浏览器打开此页面"
+   }else{
+     document.getElementById('msg').innerHTML = "请点击进入App进行埋点"
+   }
+
+
+

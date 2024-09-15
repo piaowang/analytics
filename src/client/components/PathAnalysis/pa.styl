@@ -1,0 +1,108 @@
+.pa-table-wrap
+  width 560px
+  height 400px
+.pa-section
+  padding 10px 32px
+.pa-section1
+  border-bottom 1px dashed #ddd
+  padding-top 0
+.pa-section3
+  border-bottom 1px solid #ddd
+.path-tree-box
+  overflow-x: scroll
+  overflow-y: hidden
+  height 806px
+.pt-node
+  width 183px
+  height 60px
+  margin-bottom 18px
+  background: #fafafa
+  border 1px solid #e1e1e3
+  border-left 9px solid #6969d7
+  border-radius: 8px
+  padding 5px 15px
+  position: relative
+  color #666970
+  cursor pointer
+  &:hover, &.active
+    background: #ecebfb
+  h3
+    margin 0
+    font-size: 14px
+    padding 0 0 5px 0
+  p
+    font-size: 13px
+.pt-node-leave
+  background: #f4f4f4
+  &:hover
+    background: #f4f4f4
+    cursor: default
+
+.pa-row-active
+  background: #ebdbff
+  font-weight: bold
+.pt-node-output
+  width 14px
+  height 14px
+  border-radius: 14px
+  position: absolute
+  right -7px
+  top 50%
+  margin-top -7px
+  z-index 20
+  background: #a5a2ef
+
+.reverse
+  .pt-node
+    border-left 1px solid #e1e1e3
+    border-right 9px solid #6969d7
+  .pt-node-output
+    right auto
+    left -7px
+  .pt-layer
+    left auto
+    right 0
+  .pt-nodes
+    left auto
+    right 0
+  .pt-svg-wrapper
+    left auto
+    right 183px
+.pt-layer
+  position: absolute
+  left 0
+  top 0
+  width 297px
+  height 720px
+.pt-nodes
+  position: absolute
+  left 0
+  top 0
+  width 183px
+  height 720px
+.pt-svg-wrapper
+  position: absolute
+  left 183px
+  width 114px
+  height 720px
+  top 0
+.pt-svg
+  position: absolute
+  left 0
+  top 0
+  width 114px
+  height 720px
+.path-tree-wrapper
+  margin-top 25px
+  height 720px
+  position: relative
+
+.pa-scroll-bar-box
+  position: fixed
+  bottom: 10px
+  width 100px
+  right 10px
+  opacity .5
+  z-index 400
+  &:hover
+    opacity: 1

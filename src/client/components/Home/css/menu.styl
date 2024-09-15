@@ -1,0 +1,88 @@
+.left-menu-box
+  position absolute
+  top 48px
+  left 0
+  bottom 0
+  overflow hidden
+  overflow-y: auto
+  border-right: 1px solid #e4e4e4
+  width: 180px
+  background: #3a404e
+  z-index: 999
+  transition: all 0.5s
+  .ant-menu-inline
+    .ant-menu-item
+      font-size: 14px !important
+  .sugoicon 
+    margin-right: 10px
+  &.left-menu-min
+    width: 56px
+  .left-top-tit
+    height 48px;
+    display: flex
+    align-items: center
+    justify-content: right
+    flex-direction: row-reverse;
+    .ico-btn
+      margin-right: 20px
+      font-size: 18px
+      color: #fff
+      cursor pointer
+  .ant-menu
+    background: none
+    position relative
+  .ant-menu-submenu
+    .ant-menu
+      background: none
+  .ant-menu-submenu-title
+    color: #fff
+  .ant-menu-item:hover
+    background: #292f3f
+    .link
+      color: #fff
+  .ant-menu-item
+    .link
+      color: #fff
+    .anticon
+      font-size: 14px;
+  .ant-menu-inline
+  .ant-menu-vertical
+  .ant-menu-vertical-left
+    border: none
+    .ant-menu-submenu-title
+      font-size: 14px !important
+    .ant-menu-item-selected:after
+      border: none
+      border-left: 3px solid #6969d7
+      left 0 
+  .ant-menu:not(.ant-menu-horizontal)
+    .ant-menu-item-selected
+      background: #51576d
+  .ant-menu-inline-collapsed
+    width: 56px;
+    .ant-menu-submenu
+      .ant-menu-submenu-title
+        padding: 0 0 0 20px !important
+  .ant-menu-submenu-inline
+    .ant-menu-submenu-title:hover
+    .ant-menu-submenu-title 
+      .ant-menu-submenu-arrow:before
+      .ant-menu-submenu-arrow:after
+        color: #fff
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+.ico-new-control
+  margin-left: 180px
+.ico-new-control-min
+  margin-left: 60px;
+.ant-menu-submenu-popup
+  z-index 100
+.hide-left-menu
+  .left-menu-box
+    display: none
+    .ico-new-control-min
+      margin-left 0
+.ant-menu-submenu
+  &.ant-menu-submenu-popup
+      width: auto
+.portal-left-menu
+  top: 70px

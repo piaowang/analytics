@@ -1,0 +1,21 @@
+include includes/head1
+title 控制台 #{verifyExpireTime} - #{siteName}
+link(rel='stylesheet', href=cdn + '/css/sugo.styles.css?' + version)
+- if (extraCssAsset)
+    link(rel='stylesheet', href=cdn + extraCssAsset + '?' + version)
+include includes/head2
+include includes/browser-alert
+include includes/license-alert
+#mychart
+#container
+#content-loading
+  .spinner
+    .bounce1
+    .bounce2
+    .bounce3
+include includes/footer-js
+script(src=cdn + '/_bc/echarts/dist/echarts' + tail + '.js' + '?' + version)
+script(src=cdn + '/_bc/d3/dist/d3' + tail + '.js' + '?' + version)
+script(src=cdn + '/_bc/highlight.js/lib/highlight.js' + '?' + version)
+script(onload='window.sugo.onload()', src=cdn + '/js/sugo.bundle.js' + '?' + version)
+include includes/footer-end

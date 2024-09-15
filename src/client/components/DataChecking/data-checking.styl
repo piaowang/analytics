@@ -1,0 +1,70 @@
+.data-checking-option
+  span
+    cursor pointer
+    color #1890ff
+
+.review-box
+  border-top 1px solid RGB(202, 202, 202)
+  margin-top 40px
+  padding-top 20px
+  position relative
+
+  &:first-child
+    margin-top 20px
+
+  &>span
+    position absolute
+    top: -14px;
+    left: 40px;
+    font-size: 16px;
+    z-index: 99;
+    background: #fff;
+    width: 100px;
+    text-align: center;
+
+  .ant-row
+    margin-bottom 5px
+
+  .ant-col-8
+  .ant-col-24
+    display flex
+    align-items center 
+
+    &>span:first-child
+      width 100px
+      text-align right
+    &>span:last-child
+      flex 1 1 auto
+
+.role-span
+  display flex
+  flex-wrap wrap
+  min-width: 100px;
+
+  span
+    border 1px solid RGB(202, 202, 202)
+    padding 5px 10px
+    margin-right 5px
+    border-radius 5px
+
+.review-submit
+  text-align center
+  margin-top 20px
+
+.permission-fun
+  .ant-collapse-content-box
+    padding 0
+  .permission-row
+    display flex
+
+    .permission-left
+      width 150px
+      border-top 1px solid #e4e4e4
+      padding 10px 40px
+    .permission-right
+      width: calc(100% - 150px);
+      padding 10px 20px
+      border-left 1px solid #e4e4e4
+      border-top 1px solid #e4e4e4
+      word-break keep-all
+

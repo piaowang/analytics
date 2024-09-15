@@ -1,0 +1,132 @@
+.nav
+  height 44px
+  width 100%
+  line-height 44px
+  padding-left 20px
+  font-size 12px
+  color #333333
+  background #f7f7f7
+.E4container
+  background-color:#E4EAEF
+.flowTableBox
+  height 100%
+  overflow scroll
+  padding 10px 10px 0px 10px
+  .flowTableTop
+    background-color #fff
+    border-radius 5px
+    padding 16px
+    .progress
+      display flex
+      height 60px
+      box-sizing border-box
+      flex-direction row
+      padding-top 15px
+      div
+        flex 16.75    
+        text-align center
+      .imagediv 
+        position relative
+        flex 11
+        img 
+          left 0
+          margin 0 auto
+          width 100%
+          position absolute
+          top: calc(30px - 50%);
+      span
+        width 30px
+        height 30px
+        background-color #6767d4
+        display inline-block
+        line-height 30px
+        color #fff
+        font-size 20px
+        border-radius 100%
+    .card
+      display flex 
+      .container
+        position relative
+        padding 5px 12px 60px 12px
+        border 1px solid #e0e7fe;
+        border-radius 5px;
+        flex 1
+        margin-right 10px
+        .top
+          display flex
+          .left
+            flex 30
+            position relative
+            //防止页面过宽时图片过大
+            overflow hidden
+            margin-right 10px
+            img
+              width 100%
+              object-fit scale-down
+              top 50%
+              left 0
+              position absolute
+              transform translateY(-50%)
+          .right 
+            flex 70
+            p
+              margin-top 20px 
+              font-size 18px
+              text-align left
+              color #000000
+              line-height 24px
+            ul
+              padding-left 17px
+              opacity 0.65
+              font-size 14px
+              color #000000
+              line-height 24px
+      .container:last-child
+        margin-right 0   
+      .use
+        position absolute
+        bottom 30px
+        line-height 24px
+        font-size 18px
+        text-align center
+        width calc(100% - 48px)
+        color #6767d4
+        cursor pointer
+  .flowTableBottom
+    margin-top 10px
+    background-color #fff
+    border-radius 5px
+    padding 16px
+    margin-bottom 40px
+    button
+      border-radius 0px
+    div
+      button:first-child
+        border-radius 5px 0px 0px 5px 
+      button:last-child
+        border-radius 0px 5px  5px 0px 
+    .typetab
+      button 
+        border-radius 5px !important
+    .selectTab
+      display flex
+      flex-direction row
+      justify-content space-between
+      margin-bottom 16px
+  .top20
+    margin-top 15px
+  .offLine_container
+    margin-top 10px
+    width 100%
+    padding 10px
+    .grouptab
+      button:first-child
+        border-radius 5px 0px 0px 5px 
+      button:last-child
+        border-radius  0px 5px 5px  0px  
+  .margin_l10
+    margin-left 10px
+  .flex
+    display flex
+    .workflow_statistics_component
+      flex 1

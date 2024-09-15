@@ -1,0 +1,14 @@
+apps:
+    name: sugo-analytics
+    script: ./app/app.js
+    instances: 1
+    exec_mode: cluster
+    error_file: ./logs/analytics_err.log
+    out_file: ./logs/analytics_out.log
+    pid_file: ./pids/analytics.pid
+    env:
+        NODE_ENV: production
+        # oracle 驱动位置，指标管理系统需要用到，除此之外部署时还需安装 libaio
+        # https://github.com/epoweripione/oracle-instantclient-18
+        # 开发环境直接将 export LD_LIBRARY_PATH=xxx 写入到 .bashrc
+        # LD_LIBRARY_PATH: /home/zxc/Downloads/instantclient_19_3

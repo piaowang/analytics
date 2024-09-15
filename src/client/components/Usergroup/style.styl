@@ -1,0 +1,207 @@
+.ug-wrapper ::-webkit-scrollbar
+  display: none
+
+.usergroup-upload ::-webkit-scrollbar
+  width 5px
+  display: block
+
+.usergroup-upload-result
+  max-height: 200px
+  overflow-y: scroll
+  padding 10px
+  border 1px dashed #eee
+
+.usergroup-list
+  position absolute
+  left 0
+  width 200px
+  height 100%
+  bottom 0
+  background #f5f5f5
+
+.usergroup-list-card
+  .ant-card-head-title
+    line-height 32px
+    padding 10px 0
+  .ant-card-extra
+    padding 10px 0
+  .ant-card-body
+    padding 17px 18px 0 18px
+    height 100%
+
+.usergroup-form-card
+  .ant-card-head-title
+    line-height 32px
+    padding 10px 0
+  .ant-card-head
+    background #f7f7f7 
+  .ant-card-body
+    position relative
+    padding 17px 18px
+    overflow-y scroll
+    height calc(100% - 53px)
+
+.usergroup-filter-type-switcher
+  .filter-type-item
+    border-left 5px solid #E9E9E9
+    border-color #E9E9E9
+    &.active
+      border-color colorMain
+
+
+.usergroup-tag-list-item
+  height 32px
+  line-height 32px
+  padding 0 10px
+  &.active
+    color white
+    background colorMain
+
+.usergroup-list-wrapper
+  overflow-y scroll
+  position absolute
+  top 60px
+  bottom 0
+  width 100%
+  left 0
+  
+.usergroup-lists table
+  font-size: 14px
+
+.user-list-wrap
+  height 100%
+  overflow-y: scroll
+.user-pager
+  padding 10px 0
+.usergroup-unit a
+  line-height 1.4
+  padding 10px 20px
+  color #333333
+  &:hover
+    background #f6f4f8
+  &.active
+    background #fff
+    color #333
+    
+.view-mode .ant-form-item
+  margin-bottom 10px
+
+.ug-info
+  position relative
+  margin-left 200px
+  height 100%
+
+.ug-wrapper
+  background #fff
+
+.ug-intro
+  padding 40px
+
+.ug-form
+  padding-top 60px
+  .buttons
+    position relative
+    z-index 4
+
+  .filters
+    padding 10px 0
+
+  .filter
+    border-left 2px dashed #1ab394
+    padding-left 10px
+    margin-bottom 5px
+    
+  .measures .filter
+    border-left 2px dashed #08c
+
+  .relation-status
+    color #1ab394
+    font-size 12px
+
+  .measures .relation-status
+    color #08c
+
+  .filter-wrap .mg1t
+    margin-top 1px
+
+  .filter-content
+    padding 0 6px
+    border 1px dashed #aaa
+    margin-bottom 4px
+    border-radius 3px
+
+.ug-thumb
+  height 220px
+  border 1px solid #ddd
+  border-radius 3px
+  background #fff
+  margin-bottom 15px
+  color #999
+  &:hover
+    box-shadow 0 0 3px 3px rgba(154, 118, 171,.2)
+  h2 a
+    color #7d7fe4
+    &:hover
+      color #47499d
+
+.ug-thumb-count
+  height 30px
+
+.ug-thumb-link
+  display: inline-block
+  vertical-align: center
+  width calc(100% - 10px)
+  height 60px
+  border 1px solid #eee
+  line-height: 60px
+  border-radius: 3px
+  margin-right 10px
+  color #999
+  text-align: center
+  &.disabled
+    color rgba(0, 0, 0, 0.25)
+    background: #f5f5f5
+    pointer-events none
+  .ug-thumb-link-text
+    display: none
+  .ug-thumb-link-icon
+    display: inline-block
+  &:hover
+    border-color #69dca5
+    background: #69dca5
+    color #fff
+    .ug-thumb-link-text
+      display: inline-block
+    .ug-thumb-link-icon
+      display: none
+
+.ug-thumb-link3
+  width 100%
+
+.ug-thumb-footer
+  padding 12px 0
+
+.usergroup-userlist
+  background #e4eaef
+
+
+.ug-hover-con 
+  &:hover
+    .ug-title-editor
+        .ug-edit-icon
+          display inline-block
+          transition: transform 0.1s 
+          &:hover
+            transform: scale(1.2)
+            transition: transform 0.1s 
+
+.ug-title-editor
+  position relative
+  // padding-right 30px
+  .ug-edit-icon
+    display none
+    position absolute
+    top 2px
+    cursor pointer
+
+    

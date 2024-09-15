@@ -1,0 +1,79 @@
+#main_div {
+    font-size: 14px;
+}
+
+#main_div .launch-btn-container {
+    border-radius: 50px;
+    height: 48px;
+}
+
+#main_div .launch-btn-container a {
+    display: block;
+    height: 44px;
+    margin-right: 4%;
+    margin-left: 4%;
+    border-radius: 44px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+    background: #6969d7;
+border-radius: 8px;
+}
+
+#main_div .lose_img {
+    font-size: 16px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#main_div .title_img {
+    margin-top: 40px;
+    width: 35%;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#main_div .failed-box {
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid #E1E2E4;
+    border-radius: 2px;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#main_div .failed-box .failed-tip-title {
+
+    color: #191140;
+    font-weight: 500;
+    line-height: 25px;
+    margin:10px 15px;
+}
+
+#main_div .hr-line {
+    background-color: #E1E2E4;
+    height: 1px;
+}
+
+#main_div .failed-box ul {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#main_div .failed-box ul li {
+    color: #65697F;
+    font-size: 14px;
+    list-style: none;
+    line-height: 30px;
+}

@@ -1,0 +1,17 @@
+<svg id="ok" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #8794a8;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="bg" class="cls-1" width="20" height="20"/>
+  <path id="icon_ok" class="cls-2" d="M1466,98c0.81,0,.96-0.673.96-1.483V85.248a1.069,1.069,0,0,0-1.03-1.241s-7.09.085-14.94,0.042c-0.97.008-.99,0.211-0.99,1.02V96.685c0,0.81.19,1.315,1,1.315h7v2h-8v1.993h16.99V99.87L1460,100V98h6Zm-14-2V86h13V96h-13Zm6.42-2.571,2.34-1.354a0.93,0.93,0,0,0,0-1.611l-2.34-1.356a0.933,0.933,0,0,0-1.4.806v2.71A0.934,0.934,0,0,0,1458.42,93.429Z" transform="translate(-1448 -83)"/>
+</svg>

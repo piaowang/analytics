@@ -1,0 +1,22 @@
+include includes/head1
+title 出错了 - #{siteName}
+style.
+  .main {
+    width: 800px;
+    margin: 30px auto
+  }
+
+include includes/head2
+include includes/browser-alert
+#wrapper
+  .main
+    h2 duang!500 服务器出错了....
+    hr
+    pre.
+      错误信息： #{error.message || ''}
+    p.hide #{error.stack || ''}
+
+    hr
+    p
+      a(href=host) 前往首页
+include includes/footer-end

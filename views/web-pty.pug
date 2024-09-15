@@ -1,0 +1,23 @@
+doctype html
+|<html>
+|<head>
+|<meta charset="UTF-8" />
+|<link rel="shortcut icon" href="#{favicon? cdn + '/' + favicon : cdn + '/favicon.ico'}">
+|<meta http-equiv="x-ua-compatible" content="IE=edge" />
+|<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+title sh
+script(src='/res/pty/socket')
+script(src='/res/pty/terminal')
+script(src='/res/pty/pty')
+link(rel='stylesheet', href='/res/pty/style')
+|</head>
+|<body class="#{(uaArr || []).join(' ')}" style="margin:0">
+|<div style="width:100%; height:100vh;background:#000;" web-tpy-render web-tty-render pty="myPty">无法渲染Terminal</div>
+
+script.
+  // 配置web-pty，这里只有url一项配置，如果不配置url则使用默认的url
+  // webpty.config({ url: 'ws://localhost:3000' })
+  //进行渲染
+  webpty.render()
+
+</body></html>

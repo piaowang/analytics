@@ -1,0 +1,231 @@
+
+$color-1 = #111E36
+$color-2 = #212121
+$color-3 = #6C6F75
+$color-4 = #1760E5
+
+#container
+  height auto 
+  overflow scroll
+
+#user-detail
+  width 100%
+
+  // ===
+  // 共用样式
+
+  .title
+    color $color-2
+    font-size 15px
+    font-weight bold
+    margin-bottom 10px
+
+    span
+      display inline-block
+      width .16rem
+      height .16rem
+      margin-right 10px
+      background-size .16rem .16rem
+
+  .desc-1
+    font-size 16px
+    color $color-2
+    font-weight bold
+    margin-bottom .06rem
+
+  .desc-2
+    font-size 10px
+    color $color-3
+    margin-bottom 0
+
+  .desc-3
+    font-size 12px
+    color $color-4
+    opacity .8
+    margin-bottom .03rem
+
+  // ===
+  // 导航
+  .am-navbar
+    width 100%
+    height 1.53rem
+    background-image url('/_bc/sugo-analytics-extend-nissan/assets/images/detail-top-bg.png')
+    background-color #ffffff
+    background-size: cover
+    color #ffffff
+
+    .am-navbar-title
+      color #ffffff
+
+    .am-navbar-left, .am-navbar-title, .am-navbar-right
+      align-items: flex-start;
+      padding-top: 0.26rem;
+
+  // ===
+  // 第一大块
+  .info
+    border-radius 20px 20px 0px 0px
+    background-color #ffffff
+    position: relative;
+    top: -0.35rem;
+    padding 20px
+
+    // --- 基础信息 ---
+    .basic
+      display flex
+      justify-content flex-start
+      align-items flex-start
+      position relative
+
+      .img
+        width .76rem
+        height .76rem
+        margin-right .17rem
+        background-color #ffffff
+        background-size: cover
+        border-radius 50%
+        position relative
+        top -.5rem
+
+      .name
+        color $color-1
+        font-size 22px
+        margin-bottom .06rem
+
+      .sex
+        color $color-3
+        font-size 12px
+        margin-bottom .02rem
+
+        span
+          display inline-block
+          width .12rem
+          height .12rem
+          background-size: cover
+          margin-right 10px
+          background-size .12rem .12rem
+
+          &.male
+            background-image url('/_bc/sugo-analytics-extend-nissan/assets/images/male-icon.png')
+
+          &.female
+            background-image url('/_bc/sugo-analytics-extend-nissan/assets/images/female-icon.png')
+
+      .contact
+        position absolute
+        right 0
+
+  // --- 试驾车辆 ---
+  .try
+    margin-top .1rem
+    margin-bottom .3rem
+
+    .car-icon
+      background-image url('/_bc/sugo-analytics-extend-nissan/assets/images/try-icon.png')
+
+    .content
+      background-image url('/_bc/sugo-analytics-extend-nissan/assets/images/try-bg.png')
+      background-size: cover
+      background-position: center;
+      padding: 0.20rem 0.16rem 0;
+      display flex
+      justify-content space-between
+
+      .car-1
+        width: 1.1rem;
+        height .61rem
+      .car-2
+        width 1.3rem
+        height .51rem
+
+  // --- 感兴趣车辆 ---
+  .interest
+    .int-icon
+      background-image url('/_bc/sugo-analytics-extend-nissan/assets/images/interest-icon.png')
+
+    .am-flexbox-item
+      text-align center
+
+      &:nth-child(2)
+        border-left 1px solid #F0F1F2
+        border-right 1px solid #F0F1F2
+
+  // ===
+  // tab 页
+  .tabs
+    position: relative;
+    top: -0.15rem;
+    height: fit-content;
+
+    .am-tabs-default-bar-tab
+      color $color-2
+
+    .am-tabs-default-bar-tab-active
+      color #25272E
+      font-weight bold
+
+    .desc
+      display inline-block
+      margin 0 .26rem
+    
+    .am-flexbox
+      width 100%
+      padding 0 .2rem
+
+      .am-flexbox-item
+        width 100%
+        padding .2rem 0
+        border-bottom 1px solid #F0F1F2
+
+    .discount
+      width: 90%;
+      display flex
+      justify-content space-between
+      align-items center
+      margin: .1rem 0;
+      padding: 0.2rem 0.3rem 0.2rem 0.2rem;
+
+    .discount-1
+      background-image url('/_bc/sugo-analytics-extend-nissan/assets/images/discount-1.png')
+      background-size 100% 100%
+
+      .discount-title
+        color #25272E
+        font-size 20px
+        font-weight 400
+
+      .discount-status
+        font-size 18px
+        color #ffffff
+        font-weight bold
+
+
+    .discount-2
+      background-image url('/_bc/sugo-analytics-extend-nissan/assets/images/discount-2.png')
+      background-size 100% 100%
+
+      .discount-title
+        color #25272E
+        font-size 20px
+        font-weight 400
+
+      .discount-status
+        font-size 18px
+        color #ffffff
+        font-weight bold
+
+      .discount-time
+        color #3A3D43
+        font-size 12px
+        opacity .7
+
+    .my-tab-pane
+      background-color: #fff;
+      overflow: hidden;
+      min-height: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+

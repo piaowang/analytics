@@ -1,0 +1,258 @@
+.dashboard-wrap .scroll-content
+  height 100%
+  background #e4eaef
+.dashboard-wrap .ant-spin-container
+  height 100%
+.dashboard-wrap
+  .ant-tooltip-content
+    margin-bottom: -19px
+  .ant-tooltip-arrow
+    bottom -24px
+.dash-list
+  .dash-unit
+    float left
+    width 300px
+    height 488px
+    margin 0 20px 20px 0
+    position relative
+    .fright
+      .pointer
+        display none
+      .anticon-star
+        display inline-block
+    &:hover .fright .pointer
+      display inline-block
+
+  .slices
+    position relative
+    &:hover .slice-card
+      box-shadow 2px 2px 3px 0px rgba(0,0,0,.2)
+    &.more-than-one:hover .slice-1
+      transform rotate(0deg) translateY(60px) translateX(-9px)
+      
+    &:hover .slice-2
+      transform rotate(0deg) translateY(30px) translateX(-6px)
+
+    &:hover .slice-3
+      transform rotate(0deg) translateY(0px) translateX(-3px)
+
+  .slice-card
+    height 408px
+    background #fff
+    width 300px
+    border 1px solid #ddd
+    position absolute
+    left 0
+    top 0
+    transition all .3s ease-in-out
+    background #fff
+    border-radius 3px
+    &:hover
+      box-shadow 0 0 3px 3px rgba(13,139,113,.2)
+
+  .slice-1
+    z-index 30
+  .slice-2
+    transform rotate(-1.6deg)
+    z-index 20
+  .slice-3
+    transform rotate(-2.8deg)
+    z-index 10
+
+  .tag
+    padding 8px
+    border-radius 3px
+    border 1px dashed #eee
+    background #fff
+
+.charts-box
+  background: #efefef
+  .chart-wrapper
+    padding 10px
+    margin 10px
+    background #fff
+    border-radius 3px
+.dashboard-show-data
+  .ant-table-thead > tr > th
+    color black !important
+  .ant-table-header
+    margin-bottom 0px !important
+    padding-bottom 0px !important
+    overflow-x hidden !important
+
+.form-wrapper
+  min-height 600px
+  .slice-card
+    position absolute
+    width 100%
+    height 100%
+    left 0
+    right 0
+    top 0
+    bottom 0
+    margin 0
+    float none
+    box-shadow 0px 3px 10px 0px rgba(13,139,113,.2)
+    border-radius 4px
+    &:hover
+      transition all .3s ease-in-out
+      box-shadow 0px 4px 10px 0px rgba(45,163,251,0.4)
+
+  .slice-card-head
+    padding 10px
+    background: #fff
+    border-bottom 1px solid #fff
+    border-radius 3px 3px 0 0
+    font-size 14px
+    color #555
+    font-weight bold
+
+  .react-resizable-handle
+    z-index 9
+
+  .slice-card-body
+    //overflow hidden
+    height calc(100% - 42px)
+    padding 0 10px 10px 10px
+
+  .dropzone.dropover
+    background #f4f5a8
+    .no-slices-bg
+      background #f4f5a8
+
+  .slices-body
+    position relative
+    margin-left 250px
+    z-index 4
+    .dashboard-tabs
+      .ant-tabs-bar
+        margin 0
+
+  hr
+    border-color #d2dae0
+
+  .form-box
+    position relative
+    min-height 600px
+    // background #E4EAEF
+    padding-left 23px
+    padding-right 23px
+    &.on-slice-drag
+      .no-slices-bg
+      .react-grid-layout
+        background #e4e5f9
+    .react-grid-layout
+      min-height calc(100% - 46px)
+
+  .no-slices-bg
+    position absolute
+    left 23px
+    top 23px
+    right 23px
+    bottom 23px
+    text-align center
+    font-size 20px
+    padding-top 30px
+    border 1px dashed #aaa
+    border-radius 3px
+    color #ccc
+    background: #fff
+
+  .slice-pool
+    position absolute
+    left 0
+    top 0
+    bottom: 0
+    width 250px
+    height 100%
+    background #3a404e
+    overflow hidden
+    z-index 3
+    // border-right 1px solid #ddd
+    color #fff
+    hr
+      border-bottom 1px dashed #595f6b
+      margin 16px 0
+    
+  .pool-title
+    padding 15px 20px
+    color #fff
+
+  .pool-search
+    z-index 2
+
+  .pool-body
+    position absolute
+    z-index 1
+    left 0
+    top 160px
+    right -17px
+    bottom 0
+    overflow-y scroll
+
+  .dashb-item
+    padding 10px 16px
+    color #b7bdd3
+    margin-bottom 1px
+    &:hover
+      background: #292f3f
+    &.active
+      background: #51576d
+      color #fffdfe
+      border-left 3px solid #6969d7
+
+.mode-show .form-wrapper .pool-body
+  top 104px
+
+.mode-edit .nav-bar
+  border-bottom: none
+
+.slice-unit
+  margin 7px 16px 7px 16px
+  background #4d535f
+  color #fff
+  padding 10px
+  border-radius 3px
+  font-size 12px
+  position: relative
+  .slice-op
+    color #eee
+    &:hover
+      color #fff
+  &:hover
+    background #6969d7
+  a
+    color #fffffd
+  .slice-name
+    width 163px
+  .slice-unit-icon-wrap
+    position: absolute
+    right 10px
+    top 10px
+
+.dash-menu
+  .ant-collapse-header
+    color #b7bdd3 !important
+  .ant-collapse-content-box
+    background-color #3a404e !important
+  .ant-collapse-content 
+    margin: 0px 15px
+.dash-category-modal
+  .ant-select-selection--multiple
+    height 170px
+    overflow-y auto
+  .category-panel 
+    height 300px
+    overflow-y auto
+
+.del-btn
+  display: flex
+  align-items: center
+  .del-btn-icon
+    height 18px
+    width 14px
+    display: flex
+    align-items: center
+    svg 
+      height 12px
+      width 12px

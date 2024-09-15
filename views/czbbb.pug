@@ -1,0 +1,23 @@
+include includes/head1
+title 掌上车店
+link(rel='stylesheet', href=cdn + '/css/ls.styles.css?' + version)
+include includes/head2
+include includes/browser-alert
+#container
+#content-loading
+  .spinner
+    .bounce1
+    .bounce2
+    .bounce3
+
+include includes/footer-js
+script.
+  window.sugo.czbbb = !{serialize(czbbb)}
+  //- window.sugo.livefeedOptionsStr = `#{livefeedOptionsStr}`
+
+script(src=cdn + '/_bc/echarts/dist/echarts' + tail + '.js' + '?' + version)
+script(src=cdn + '/_bc/d3/dist/d3' + tail + '.js' + '?' + version)
+script(src=cdn + '/_bc/moment/min/moment.min.js' + '?' + version)
+script(src=cdn + '/_bc/moment/locale/zh-cn.js' + '?' + version)
+script(onload='window.sugo.onload()', src=cdn + '/js/czbbb.bundle.js' + '?' + version)
+include includes/footer-end

@@ -1,0 +1,118 @@
+
+body {
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+h2 {
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.layout-container {
+    width: 80%;
+    margin: 0 10%
+}
+
+.navigation {
+    left: 10%;
+}
+
+.header-notice {
+    background-color: #fad8c7;
+    color: #eb6420;
+    margin-bottom: 10px;
+    padding: 6px;
+    overflow: auto;
+}
+
+pre.source-code.line-number {
+    margin-top: 10px;
+    border: 1px solid #bfe5bf;
+    overflow: auto;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 12px;
+}
+
+pre.source-code ol {
+    background-color: #bfe5bf;
+    color: #009800;
+}
+
+pre.source-code li {
+    padding: 2px 8px;
+}
+
+.import-path {
+    padding-bottom: 6px;
+}
+
+.content .detail > * {
+    padding: 8px 0;
+    margin: 0
+}
+
+.import-path pre.prettyprint,
+.import-path pre.prettyprint code {
+    background: none;
+}
+
+.kind-class,
+.kind-interface,
+.kind-function,
+.kind-typedef,
+.kind-variable,
+.kind-external {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+}
+
+.content .detail {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.content .detail > h3 {
+    background-color: #bfe5bf;
+    border-radius: 4px;
+    padding: 4px;
+    line-height: 1;
+}
+
+.content .detail h4 + :not(pre) {
+    margin-left: 0;
+}
+
+.navigation .nav-dir-path {
+    font-size: 1em;
+}
+
+.content .detail > h3 {
+    color: #009800;
+}
+
+.example-caption {
+    font-style: normal;
+    font-size: 12px;
+    color: #aaa;
+}
+
+table.summary td {
+    border: solid 1px #eee;
+}

@@ -1,0 +1,43 @@
+.table-page{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+  height: 100%;
+  padding: 20px;
+  background-color: #fff;
+  &-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ant-form{
+      height: 60px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .ant-form-item{
+        margin: 0 20px 0 0;
+        max-width: 200px;
+      }
+    }
+    &-right{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .ins-name{
+        font-size: 16px;
+        margin-right: 20px;
+      }
+    }
+  }
+  &-middle{
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+// style={{height:'100%',padding:'20px',display:'flex',flexFlow:'column',justifyContent:'flex-start',alignItems:'center',backgroundColor:'#fff'}}
+// style={{width:'100%',display:'flex',justifyContent:'flex-start',alignItems:'center'}}

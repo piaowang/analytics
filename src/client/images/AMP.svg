@@ -1,0 +1,17 @@
+<svg id="AMP" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #8798ad;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="矩形_7" data-name="矩形 7" class="cls-1" width="20" height="20"/>
+  <path id="形状_5" data-name="形状 5" class="cls-2" d="M489,141h2v2h2v-4h-4v2Zm-10,2v-2h2v-2h-4v4h2Zm2,10h-2v-2h-2v4h4v-2Zm10-2v2h-2v2h4v-4h-2Z" transform="translate(-475 -137)"/>
+</svg>

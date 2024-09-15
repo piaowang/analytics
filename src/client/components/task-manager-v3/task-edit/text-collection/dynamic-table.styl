@@ -1,0 +1,27 @@
+border-common = 1px solid #f0f0f0 
+.dynamic-table
+  border-top: border-common
+  border-radius: 4px
+  td button
+    font-size: 14px
+  th, td
+    font-size: 14px
+    &:first-of-type
+      border-left: border-common
+    &:last-of-type
+      border-right: border-common
+  .ant-table.ant-table-small,
+  .ant-table.ant-table-middle,
+  .ant-table.ant-table-large
+    .ant-table-footer
+      background-color: #fff
+      padding: 8px 0
+      button 
+        width: 100%
+  .ant-form-item
+    margin-bottom: 0
+  .ant-form-item-explain
+    position: absolute
+    top: 5px
+    left: 10px
+    pointer-events: none

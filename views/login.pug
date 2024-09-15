@@ -1,0 +1,21 @@
+include includes/head1
+title 登录 - #{siteName}
+link(rel='stylesheet', href=cdn + '/css/login.styles.css?' + version)
+include includes/head2
+include includes/browser-alert
+#container
+#content-loading
+  .spinner
+    .bounce1
+    .bounce2
+    .bounce3
+
+include includes/footer-js
+script(src=cdn + '/_bc/moment/min/moment.min.js' + '?' + version)
+script(src=cdn + '/_bc/moment/locale/zh-cn.js' + '?' + version)
+script.
+  window.sugo.showRegLink = !{!!showRegLink}
+script(onload='window.sugo.onload()', src=cdn + '/js/login.bundle.js' + '?' + version)
+script.
+  window.sugo.showRegLink = !{!!showRegLink}
+include includes/footer-end

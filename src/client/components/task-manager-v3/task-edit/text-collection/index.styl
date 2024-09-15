@@ -1,0 +1,74 @@
+prefix = 'text-collection'
+
+.{prefix}-content
+  > .ant-divider
+    margin-top: 16px
+    margin-bottom: 0
+  .{prefix}-txt-content,
+  .{prefix}-xml-content
+    .{prefix}-row
+      width: 90%
+      .selected-label
+        text-align: right
+        padding-top: 8px
+        color: rgba(0, 0, 0, 0.85)
+    .{prefix}-form
+      position: relative
+      .output-title
+        position: absolute
+        left: 0
+      &.{prefix}-txt-form .output-title
+        top: 85px
+      &.{prefix}-xml-form .output-title
+        top: 40px
+      .ant-form-item
+        margin-right: 0
+        margin-bottom: 12px
+        &.bottom-item
+          margin-bottom: 80px
+        label 
+          font-size: 14px
+        &.inline-style
+          width: 45%
+        &.inline-style-1
+          text-align: right 
+        @media (min-width: 768px)
+          &.inline-style-1
+            width: 14%
+          &.inline-style-3
+            width: 38%
+            .ant-col-md-6
+              flex: 0 0 29.6%
+              max-width: 29.6%
+        @media (min-width: 1200px)
+          &.inline-style-1
+            width: 12%
+          &.inline-style-3
+            width: 39%
+            .ant-col-xl-6 
+              flex: 0 0 29%
+              max-width: 29%
+        @media (min-width: 1600px)
+          &.inline-style-1
+            width: 10%
+          &.inline-style-3
+            width: 40%
+            .ant-col-xxl-4 
+              flex: 0 0 18.6667%
+              max-width: 18.6667%
+            .ant-col-xxl-12
+              flex: 0 0 68.5%
+              max-width: 68.5%
+        &.common-style
+          width: 90%
+        .ant-input-number
+          width: 100%
+        .ant-form-item-explain
+          position: absolute
+          top: 5px
+          left: 10px
+          pointer-events: none
+    .ant-empty-normal
+      margin: 0
+      
+      

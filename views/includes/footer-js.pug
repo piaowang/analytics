@@ -1,0 +1,44 @@
+script.
+  window.sugo = '#{compressUrlQuery(JSON.stringify(_global))}';
+
+- if (env !== 'production')
+  script.
+    window.debug = function () {
+      var args = Array.prototype.slice.call(arguments);
+      if (window.sugo.env === 'development') return console.log.apply(null, args);
+    }
+- var tail = env !== 'development' ? '.min' : ''
+- var reactTail = env !== 'development' ? '.production.min' : '.development'
+- var min = env !== 'development' ? '.min' : ''
+- var react = env !== 'development' ? 'react' : 'react'
+script(src=cdn + '/_bc/react/umd/' + react + reactTail + '.js'+ '?' + version)
+script(src=cdn + '/_bc/react-dom/umd/react-dom' + reactTail + '.js'+ '?' + version)
+script(src=cdn + '/_bc/moment/min/moment.min.js' + '?' + version)
+script(src=cdn + '/_bc/moment/locale/zh-cn.js' + '?' + version)
+script(src=cdn + '/_bc/antd/dist/' + antdName + min + '.js' + '?' + version)
+script(src=cdn + '/_bc/lodash/lodash' + min + '.js'+ '?' + version)
+script(src=cdn + '/_bc/lz-string/libs/lz-string.min.js'+ '?' + version)
+script(src=cdn + '/_bc/crypto-js/crypto-js.js'+ '?' + version)
+script(src=cdn + '/js/manifest.bundle.js' + '?' + version)
+script(src=cdn + '/js/vendors.bundle.js' + '?' + version)
+script.
+  window.sugo = JSON.parse(LZString.decompressFromEncodedURIComponent(window.sugo));
+  window.sugo.onload = function() {
+    document.body.removeChild(document.getElementById('content-loading'));
+  };
+
+//用户设定的尾部js
+script.
+  !{footerJs}
+
+//初始化埋点项目的js
+//如果判断有用户自己的埋点js，就不在加载多余的js
+- if (sugoSDKJs && footerJs && footerJs.includes('sugoio.init') && footerJs.includes(websdk_js_cdn)) {
+- let str = `sugoio.init('${sugoSDKJs.accessId}', {'project_id': '${sugoSDKJs.projectId}'});`
+  script.
+    !{str}
+
+- } else if (sugoSDKJs && !footerJs) {
+  script.
+    !{sugoSDKJs.jsStr.replace(/websdk_js_cdn/g, websdk_js_cdn).replace('/^\/\/\/', '/^\\\/\\\/\/')}
+- }

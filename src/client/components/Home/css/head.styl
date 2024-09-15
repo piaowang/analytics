@@ -1,0 +1,115 @@
+.top-head-box
+  height  48px
+  background #6969D7
+  overflow hidden
+  .logo-link
+    display: flex;
+    float: left;
+    height: 100%;
+    align-items: center;
+    margin-left: 16px;
+    img
+      height 28px
+  .h-tab-box
+    float left
+    position relative
+    margin-left 94px
+    height 100%
+    .item 
+      height 48px
+      line-height 48px 
+      padding 0 25px
+      display block
+      color #fff
+      font-size: 14px
+      opacity 0.9
+      float left
+      position relative
+      cursor pointer
+      &.cur
+        &:after
+          content: ''
+          display:block
+          width 90%
+          position absolute
+          bottom 0
+          left 50%
+          transform: translateX(-50%)
+          height 4px
+          border-radius: 2px
+          background #fff
+      &.ant-popover-open
+        opacity 1
+    .i-ico 
+      background: #fff;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      display: block;
+      left: 50%;
+      bottom: -5px;
+      transform: translateX(-50%) rotate(45deg);
+      border-color: transparent;
+      border-style: solid;
+.h-tap-p
+  padding 20px 8px
+  display: flex
+  overflow hidden
+  .item-l
+    width 175px
+    margin: 0 16px
+    .tit
+      font-size 14px
+      color #333
+      border-bottom 1px solid #ddd
+      padding-bottom: 15px
+      &.on
+        color: #6969D7
+    .list
+      margin-top: 10px
+      .it
+        display: flex
+        font-size: 12px
+        color: #666
+        height 24px
+        align-items: center
+        margin-bottom: 5px
+        cursor pointer
+        &.cur 
+          color: #6969D7
+          .ico
+            color: #6969D7
+        .ico
+          font-size: 15px
+          margin-right: 8px
+.ant-popover-content
+  padding-top 0
+  margin-top: -15px
+.ant-popover-placement-bottom
+  .ant-popover-content
+    .ant-popover-arrow
+      top: -8px
+      display none
+.head-top-rt
+  float right
+  height 100%
+  .iblock
+    color: #fff
+    margin-right: 10px
+    display: flex
+    align-items: center
+    height 100%
+    float left
+    .ant-select-selection__rendered
+      line-height: 28px
+    .mg10r
+      margin-right: 10px
+.ico-new-control-hide
+  margin-left: 0
+.portal-head-box
+  .header
+    margin-bottom: 0px !important
+
+
+
+  

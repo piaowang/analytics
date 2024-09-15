@@ -1,0 +1,18 @@
+include includes/head1
+title 埋点热图
+<div id='main_div' style='text-align:center;font-size:50px;'>
+<a class='ant-btn ant-btn-primary ant-btn-icon-only ant-btn-lg' href='#{heat_uri}' style='margin-top:100px'><i class='anticon anticon-poweroff'></i> 打开app</a>
+<br/>
+<span id='msg' class='ant-alert ant-alert-warning ant-alert-no-icon' > </span>
+
+
+</div>
+script.
+   var ua = window.navigator.userAgent.toLowerCase();
+   if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+       document.getElementById('msg').innerHTML = "请用浏览器打开此页面"
+   }else{
+     document.getElementById('msg').innerHTML = "打开App进入热图模式"
+   }
+
+

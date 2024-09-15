@@ -1,0 +1,54 @@
+{
+  "type": "lucene_index_hadoop",
+  "spec": {
+    "dataSchema": {
+      "dataSource": "",
+      "parser": {
+        "type": "string",
+        "parseSpec": {
+          "listDelimiter": ",",
+          "format": "hive",
+          "columns": [],
+          "multiColumns": [],
+          "featureSpec": {},
+          "mapColumns": [],
+          "mapSpecs": {},
+          "timestampSpec": {
+            "column": "",
+            "format": "millis",
+            "timeZone": "+08:00"
+          },
+          "dimensionsSpec": {
+            "dynamicDimension": true,
+            "dimensions": []
+          }
+        }
+      },
+      "metricsSpec": [],
+      "granularitySpec": {
+        "type": "uniform",
+        "segmentGranularity": "DAY",
+        "queryGranularity": "NONE",
+        "intervals": []
+      }
+    },
+    "ioConfig": {
+      "type": "hadoop",
+      "inputSpec": {
+        "type": "static",
+        "paths": ""
+      }
+    },
+    "tuningConfig": {
+      "type": "hadoop",
+      "partitionsSpec": {
+        "numShards": 1
+      },
+      "jobProperties": {
+        "mapreduce.job.queuename":"root.default",
+        "mapreduce.job.classloader": "true",
+        "mapreduce.job.classloader.system.classes": "-javax.validation.,java.,javax.,org.apache.commons.logging.,org.apache.log4j.,org.apache.hadoop."
+      }
+    }
+  }
+}

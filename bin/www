@@ -1,0 +1,10 @@
+require('@babel/register')({
+  ignore: [function(filename) {
+    if (/\/src\/client/.test(filename)) {
+      console.error(`服务器端不能引用客户端的代码：${filename}`)
+      process.exit(1)
+    }
+    return /node_modules/.test(filename) // ignore node_modules
+  }]
+})
+require('../src/server/app.js')

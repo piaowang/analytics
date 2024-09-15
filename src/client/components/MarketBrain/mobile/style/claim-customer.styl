@@ -1,0 +1,74 @@
+$claim-customer-background-path="../../../../../../node_modules/sugo-analytics-static/assets/images/market-brain-h5/header1.png"
+#container
+  height 100%
+#market-brain
+  height 100%
+  width 100%
+#claim-customer
+  height 100%
+  background-color #FFF2C9
+  overflow-y auto
+  position relative
+  .header
+    width 100%
+    height 1.4rem
+    background-image url($claim-customer-background-path)
+    background-repeat no-repeat
+    background-size contain
+    padding-top .44rem
+    text-align center
+    .top 
+      font-size 22px
+      color #FFFFFF
+      font-weight 999
+    .bottom
+      background-color #FFF2C9
+      color #ffffff
+      font-size 12px
+      color #E49156
+      border-radius .1rem
+      max-width 2.6rem
+      min-width 2.3rem
+      margin 0 auto
+  .body
+    background-color #FFF2C9
+    height calc(100vh - 1.4rem - 0.65rem)
+    overflow scroll
+    .filter-box
+      margin-top .15rem
+      height .2rem
+      .ant-switch-checked
+        background-color #FFB722 
+        color #FFFFFF 
+    .customer-list
+      .customer-list-item
+        margin .1rem .2rem
+        width 3.35rem
+        height .66rem
+        background-color #FFFFFF
+        .surname
+          width 30px
+          height 30px
+          line-height 30px
+          text-align center
+          font-size 18px
+          color #ffffff
+          margin-top .18rem
+          margin-left .15rem
+          border-radius 50%
+          background-image linear-gradient(to bottom, rgba(255, 188, 63, 1), rgba(225, 90, 130, 1))
+        .customer-info
+          margin-top .14rem
+          margin-left .06rem
+          color #999999
+          font-size 12px
+        .customer-list-item-button
+          margin-top .18rem
+          margin-right .15rem
+          width .9rem
+          height .3rem 
+          line-height .3rem
+          border-radius .15rem
+          font-size 18px
+          color #ffffff
+          background-image linear-gradient(to right, rgba(241, 69, 50, 1), rgba(255, 188, 63, 1))

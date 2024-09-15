@@ -1,0 +1,272 @@
+
+.task-v3-edit-node-list
+  .ant-menu-submenu-title
+    height 30px
+    line-height 20px
+
+.wait-node-card
+  width 750px
+  border-radius 4px
+  padding 10px
+  border 1px solid #cccccc
+  position relative
+  margin 20px
+  .close-icon
+    position absolute
+    top 0
+    right 0
+    color red
+    padding 5px
+.joint-cell
+  .select-cell
+    fill #eee !important
+  .cell-mask
+    fill rgba(0,0,0, 0)
+  // &:hover
+  //   .port-body
+  //     fill #fff !important
+  //     stroke #5A9BD5 !important
+.task-v3-flow-edit
+  .content-menu
+    position absolute
+    overflow auto
+    padding 6px 0
+    background-color #fff
+    box-sizing border-box
+    border-radius 4px
+    box-shadow 0px 1px 4px rgba(0, 0, 0, 0.25)
+    z-index 900
+  .content-menu-item
+    position relative
+    padding 0 10px
+    margin 0
+    line-height 25px
+    height 25px
+    color #657180
+    font-size 12px
+    text-align left
+    clear both
+    white-space nowrap
+    list-style none
+    cursor pointer
+    -webkit-transition background 0.2s ease-in-out
+    transition background 0.2s ease-in-out
+    &:hover
+      background #18aeff
+      color #fff
+.task-edit-index
+  .ant-card-body
+    padding 10px
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab
+    padding 5px 16px
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active
+    border-top 2px colorMain solid
+    // box-shadow inset 0px 0px 5px 1px #c4c4c452
+    background-color #eee
+  .oneRowHide
+    overflow: hidden
+    white-space: nowrap
+    display: inline-block
+    text-overflow: ellipsis
+    max-width: 150px
+    line-height: 1
+  .tab-save-tip
+    position absolute
+    top 0px
+    right 0px
+    font-size 30px !important
+    z-index 998
+  .flow-close
+    position absolute
+    top 8px
+    z-index 999
+    color red
+  .select-tab-children
+    width 100%
+    left 0px
+    top -1px
+    border-top 2px solid colorMain
+    border-radius 5px
+    height 5px
+    position absolute
+  .ant-menu-submenu-arrow
+    left 10px
+  .ant-menu-submenu-title
+    padding-left 20px
+  .ant-tabs-left
+    width auto
+  .ant-tabs-left
+    .ant-tabs-left-bar
+      .ant-tabs-tab
+        font-size 14px
+        margin-right 0
+        padding 5px
+        margin 0
+        margin-right 5px
+        word-wrap break-word
+        width 30px
+        height 80px
+        box-sizing border-box
+        line-height 20px
+        writing-mode vertical-lr
+    .ant-tabs-ink-bar
+        opacity 0
+  .ant-tabs-left
+    .ant-tabs-left-bar
+      .ant-tabs-tab-active
+        background-color blue
+        color #fff
+        font-size 14px
+  .vertical-separator
+        height auto !important
+  .split-helper
+    .horizontal
+      .vertical-separator
+        height 100% !important
+  .ant-tabs
+    .ant-tabs-left-content
+      padding-left 0px
+      border-left none
+      height 100%
+      background-color #fff
+    .ant-tabs-tabpane
+      .ant-menu-inline
+        width auto !important
+  .ant-menu-sub
+    height 100% !important
+  // .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title
+  //   height 30px
+  //   line-height 30px
+  .ant-tabs
+    .ant-tabs-left-content
+      .ant-menu-submenu-title
+        width 100%
+        padding-left 20px
+        padding-right 0
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #DDD;
+        margin: 0;
+        margin-top: -1px;
+  .floatright
+    // height 20px
+    // margin-top 0px
+    // line-height 20px
+    float right
+    // margin-right 0px
+    // margin-bottom 5px
+  .edit-tree-icon
+    span
+      display none
+    &:hover
+      span
+        display inline-block
+  // .ant-tabs
+  //   .ant-menu-submenu-open
+  //     .ant-menu-submenu-title
+  //       width calc(100% - 95px)
+  .ant-tree
+    .ant-tree-switcher
+      width 10px
+  .ant-tree
+    // margin-left 30px
+    max-height: calc(100vh - 312px)
+    overflow-y: auto
+    overflow-x: hidden
+    &::-webkit-scrollbar
+      width 4px
+      background-color #fff
+    &::-webkit-scrollbar-thumb
+      border-radius 4px
+      background-color #ddd
+  .task-v3-category-tree
+    // margin-top -23px
+    .ant-tree-switcher_close, .ant-tree-switcher_open
+      margin-left: 20px
+  .ant-layout
+    .horizontal
+      .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title
+        background-color #ccc
+        height 30px
+        line-height 30px
+        width 100%
+        .ant-menu-submenu-arrow
+          left inherit
+.task-edit-index
+  .width20
+    height calc(100vh - 10px) !important
+  .ant-tabs-top
+    .ant-tabs-bar
+      padding-left 20px
+  .ant-tabs-bar
+    margin-bottom 5px
+  .ant-tree
+    .ant-tree-node-content-wrapper
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+  .noclose
+    .task-v3-category-tree
+      margin-top 0px
+    .floatright
+      line-height 44px
+  [role=menu]
+    background-color #fff
+  .tasks-tree
+    .task-v3-category-tree
+      margin-top 0
+    .ant-tree
+      max-height: calc(100vh - 230px)
+  .nav-bar-right-box
+    float right
+
+  // ==== 数据采集编辑面板 ====
+  .task-edit-data-sync
+    .ant-card-body
+      padding 16px
+    .ant-card-head
+      min-height 0
+    .ant-card-head-title
+      padding 8px 0
+    .ant-legacy-form-item
+      margin-bottom 0
+    .ant-tabs-top
+      .ant-tabs-bar
+        padding-left 16px
+        padding-right 20px
+  // ==== 数据采集编辑面板 ====
+
+.guide-home
+  min-height 100%
+  .step-item
+    background #F7F7FC
+    margin-bottom 20px
+    border-radius 7px
+    margin-left 9px
+  .border-triangle
+    position absolute
+    left -12px
+    top 10px
+    border 5px solid transparent
+    border-bottom 12px solid #F7F7FC
+    transform rotate(-90deg)
+    height 0
+    width 0
+.activeTreeNode
+  background-color #eee
+.TreeNodeTiem.ant-tree-treenode
+ padding 6px 0 4px 0
+
+// 任务树，任务悬浮后保持删除按钮可见
+.task-category-tree
+  .ant-tree-node-content-wrapper
+    display flex
+  .ant-tree-title
+    min-width 0
+  .edit-tree-icon
+    display flex
+    align-items center
+.async-table-btn
+  position absolute
+  margin-top 20px
+  left 75px
+  z-index 9999

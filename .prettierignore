@@ -1,0 +1,17 @@
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
+dist
+common
+app
+.umi
+.umi-production
+node_modules
+app
+common
+docs
+public
+scripts
+bin

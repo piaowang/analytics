@@ -1,0 +1,170 @@
+.granularity-handler
+  .ant-input-number-input
+  .ant-input-number
+    width 100%
+
+.dimension-popover-shortcut
+  .ant-popover-inner
+    min-width 100px
+
+.analytic-popover
+  .tile
+    line-height 28px
+    display inline-block
+    vertical-align top
+    width 192px
+    margin 5px 8px 0 0
+    border-radius 4px
+    background-color #eee
+    transition 0.5s
+    cursor pointer
+    &:hover
+      background-color colorMain
+      color #fff
+
+.analytic
+
+  i.grey-at-first
+    color lightness(saturation(colorMain, 29%), 67%)
+    &:hover
+      color colorMain
+
+  .viz-switch-btn
+    transition all 0.2s
+    &:hover
+      opacity 1 !important
+      box-shadow 0 1px 4px #ddd
+    &.disabled
+      &:hover
+        opacity 0.5 !important
+        box-shadow none
+
+  .data-display-panel 
+    .ant-table-small.ant-table-bordered .ant-table-thead > tr > th:last-child, 
+    .ant-table-small.ant-table-bordered .ant-table-tbody > tr > td:last-child
+      border-right 1px #dcdbe0 solid 
+    tbody tr
+      cursor pointer
+  .fixed-item
+    margin-bottom 4px
+    height 30px
+    padding 3px 0
+    line-height 24px
+  .sorting-item
+    border 1px solid #c4c6d2
+    cursor move
+    margin-bottom 4px
+    margin-right 4px
+    height 30px
+    padding 3px 0
+    line-height 24px
+    border-radius 4px
+    .display-by-hover
+      display none
+    &.invisible
+      color: #cdcdcd
+    img
+      display inline-block
+      vertical-align top
+    img.pointer
+      max-height 24px
+    &:hover
+      .display-by-hover
+        display inline-block
+
+  .panels
+    height 100%
+    width 100%
+    clear both
+
+  .panel
+    padding 5px
+  .chart-wrapper
+    margin 10px
+    height 100%
+    overflow auto
+  .condition-bar
+    min-height 36px
+    line-height 36px
+  .tile
+    line-height 28px
+    display inline-block
+    vertical-align top
+    width 192px
+    margin 4px 8px 4px 0
+    border-radius 4px
+    background-color #eee
+    transition 0.5s
+    cursor pointer
+    &:hover
+      background-color #ddd
+  .tile.ellipsis
+    width 40px
+    text-align center
+
+.custom-filter-popover
+  .ant-popover-inner-content
+    padding 0
+
+.filter-setting-popover
+  .ant-select-dropdown-menu-item
+    &.on
+      background: #eeefff
+  .ant-select-dropdown-menu-item
+    padding: 0 14px
+    height: 24px
+    line-height: 24px
+  .ant-select-dropdown-menu-item-active
+    background: #eee
+  .ant-select-dropdown-menu-item-selected
+    background: rgba(159, 159, 241, 0.388)
+  .ant-checkbox-wrapper
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    span:nth-child(2)
+      flex-grow: 1
+    .ant-checkbox
+      top: auto
+
+.filter-number-popover
+  padding: 14px
+
+// 批量下载
+.analytic-batch-item
+  width 100%
+  position relative
+  .item-label
+    position absolute
+    width 120px
+    top 0
+    left 0
+  .item-content-wrapper
+    padding-left 125px
+  .item-content
+    max-height 100px
+    overflow-y auto
+
+.condition-panel
+  .sugo-close
+    color #888888
+    &:hover
+      color #dd585d !important
+.table-custom-header
+  .custom-select
+    background-color #A6DCED !important
+  .un-select
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+  .ant-table-placeholder
+    display none
+  
+.fix
+  .ant-breadcrumb
+    span{
+      display inline-block
+      height 24px
+      line-height 24px
+    }

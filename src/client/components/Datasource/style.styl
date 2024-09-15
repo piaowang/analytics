@@ -1,0 +1,195 @@
+.measure-model
+  .measure-list
+    border-top: 1px solid #ccc
+    padding-top: 10px
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    .left
+      width 30%
+      height 200px
+      background #f7f7f7
+      position relative
+    .right
+      width: 70%;
+      padding: 0 20px;
+    .center
+      text-align: center
+      margin: 10px;
+  .measure-list-wrapper
+    overflow-y auto
+    position absolute
+    top 65px
+    height 140px
+    right 0
+    left 0
+    line-height 2
+  .formula-tips
+    color #3ea7f3
+  .filters
+    padding 0
+
+//Popover
+.measure-direct-modal
+  &.dim-content
+    height 250px
+  &.keyboard-content
+    height 160px
+    .keyboard
+      color #108ee9
+      font-size 14px
+      border-radius 5px
+      border 1px solid #e5e5e5
+      background white
+      text-shadow 0px 1px 1px #fff
+      font-weight bold
+      width 44px
+      height 22px
+      margin 5px
+      cursor pointer
+      display inline-block
+      text-align center
+  .dimension-list-wrapper
+    overflow-y auto
+    position absolute
+    height 200px
+    width 100%
+    left 0
+    margin-top -10px
+  .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-sub.ant-menu-inline > .ant-menu-item, .ant-menu-vertical > .ant-menu-item
+    padding: 0px 10px
+    line-height: 30px
+    height: 30px
+  .ant-menu-submenu-vertical > .ant-menu-submenu-title:after
+    right: 0
+  &.ant-menu-vertical
+    border-right none
+ 
+.dimension-model
+  .formula
+    textarea
+      width 100%
+    .caculator
+      width 100px
+      display inline-block
+      margin-left 5px
+      .operator
+        color #00b4ff
+        font-size 14px
+        border-radius 2px
+        border 1px solid #e5e5e5
+        // background -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#ebebeb))
+        text-align center
+        text-shadow 0px 1px 1px #fff
+        font-weight bold
+        width 36px
+        height 36px
+        margin 5px
+        display inline-block
+        cursor pointer
+        display: inline-block
+        &:hover
+          background -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#ebebeb))
+   .function
+    left: 550px !important
+    // min-width: 450px
+    .ant-select
+      width: 100%
+  .choose-panel
+    display: block
+    width: 100%
+    border: 1px solid #d9d9d9
+    padding: 10px
+    height: 212px
+    border-radius 3px
+    &:first-child
+      margin-right: 2%
+    .list-wrapper
+      height: 158px
+      overflow: overlay
+      padding: 10px 5px
+      .ant-select-dropdown-menu
+        line-height: 1.4
+        max-height: none
+  .group-dimension
+    .group
+      padding: 0 40px 0 30px
+      .ant-select-dropdown-menu
+        line-height: 1.5
+        max-height: none
+      .ant-select-dropdown-menu-item
+        i
+          float: right
+          margin-right: 10px
+          visibility: hidden
+          font-weight: normal
+        &:hover
+          i
+            visibility: visible
+      .ant-menu-vertical
+        border-right: 0
+      .date-group
+        border: 1px solid #d9d9d9
+        height: 280px
+        padding: 10px
+      .right
+        width: 70%
+        margin-left: 2%
+        height: 280px
+        border: 1px solid #d9d9d9
+        padding: 10px
+        overflow-y: auto
+      .left
+        width: 28%
+        border: 1px solid #d9d9d9
+        height: 280px
+        overflow-y: auto
+
+
+.datasource-tag-list-dropdown
+  .body
+    height: 200px
+    overflow: auto
+    padding: 8px 4px
+
+.datasource-setting
+  form 
+    padding 80px
+  .left
+    display inline-block
+    width 60%
+  .right
+    display inline-block
+    padding 10px
+    width 40%
+    div
+      magin-top 5px
+  .split-line
+    height 100%
+    left 58%
+    position absolute
+    border 1px solid #eee           
+
+.datasource
+  .sorting-item
+    border 1px dotted #9a9b9c
+    cursor move
+    margin-bottom 10px
+    margin-right 4px
+    height 30px
+    padding 3px 5px
+    line-height 24px
+    border-radius 5px
+    img
+      vertical-align middle
+
+.autocscroll-setting
+{
+  height: calc(100vh - 188px)
+  overflow-y: auto
+}
+
+.ant-menu-submenu.ant-menu-submenu-popup
+  z-index 1030
+
+.ant-popover
+  z-index 1030

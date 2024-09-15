@@ -1,0 +1,33 @@
+include includes/head1
+title 请升级浏览器 - #{siteName}
+link(rel='stylesheet', href=cdn + '/css/login.styles.css?' + version)
+include includes/head2
+
+div#update-explorer
+  div.picture
+    img(src="/_bc/sugo-analytics-static/assets/images/error/error_illustr.png", alt="") 
+  div.describe
+    h3.des-title
+      img(src="/_bc/sugo-analytics-static/assets/images/error/error_icon.png", alt="")
+      i 您正在使用#{ua.chrome?'':'非'}谷歌浏览器，版本#{ua.browserVersion}，某些功能不可用
+    p.des-body 为了得到我们#{siteName}最好的体验效果，我们建议您使用以下浏览器。
+  hr
+  //- div.continue &gt;&gt;&gt;继续访问
+  ul.browser-list
+    li.b-item
+      img(src="/_bc/sugo-analytics-static/assets/images/error/chrome.png", alt="")
+      i chrome52+
+    li.b-item
+      img(src="/_bc/sugo-analytics-static/assets/images/error/firefox.png", alt="")      
+      i Firefox58+
+    li.b-item
+      img(src="/_bc/sugo-analytics-static/assets/images/error/360.png", alt="")
+      i IE11+
+    //- li.b-item
+    //-   img(src="/_bc/sugo-analytics-static/assets/images/error/sogou.png", alt="")
+    //-   i Sogou
+    //- li.b-item
+    //-   img(src="/_bc/sugo-analytics-static/assets/images/error/opera.png", alt="")
+    //-   i Opera
+
+include includes/footer-end

@@ -1,0 +1,116 @@
+@body-background:#F3F4FD;
+@component-background: #FFFFFF;
+@nav-border-color:#f0f0f0;
+@nav-text-color:rgba(54,60,66,0.8);
+@text-color-secondary:#363C42;
+@nav-text-color-active:#6D36F3;
+@prev-next-btn:#ECF0FC;
+
+.dashboard-theme-light{
+    background-color: @body-background;
+
+    .ant-spin-nested-loading {
+        background-color: @body-background;
+    }
+    .navs-and-buttons-wrapper {
+        background-color: @component-background;
+        .curboard_label{
+            color:@nav-text-color-active;
+        }
+        .nav-bar {
+            background-color: @component-background;
+            .btns-spliter{
+                border-color: @nav-border-color !important;
+            }
+        }
+    }
+    .ant-tabs.ant-tabs-card {
+        .ant-tabs-card-bar {
+            .ant-tabs-tab {
+                background: @component-background  !important;
+                border-color:@nav-border-color !important;
+                color: @nav-text-color  !important;
+                .ant-tabs-close-x {
+                    color: @nav-text-color  !important;
+                    &:hover {
+                        color: @nav-text-color-active !important;
+                    }
+                }
+                
+
+            }
+            .ant-tabs-tab-active {
+                color: @nav-text-color-active  !important;
+                background: @component-background  !important;
+                border-color:@nav-border-color !important;
+                .ant-tabs-close-x {
+                    color: @nav-text-color  !important;
+                }
+            }
+        }
+        .ant-tabs-tab-prev{
+            .ant-tabs-tab-prev-icon{
+                background-color: @prev-next-btn !important;
+            }
+        }
+        .ant-tabs-tab-next{
+            .ant-tabs-tab-next-icon{
+                background-color: @prev-next-btn !important;
+            }
+        }
+    }
+    .slice-card{
+        .slice-head{
+            border: none;
+            .slice-head-notice{
+                
+                background-color: @nav-text-color-active !important;
+            }
+            .slice-head-content{
+                &::before{
+                    background-color: @nav-text-color-active;
+                }
+                .middle-text{
+                    a {
+                        color: @text-color-secondary;
+                    }
+                }
+            }
+        }
+        .slice-body{
+            th.ant-table-cell{
+                color: #363c42;
+            }
+            td.ant-table-cell{
+                color: rgba(54,60,66,0.7);
+            }
+        }
+    }
+    .edit-btn{
+        color: @body-background;
+        background-color: @nav-text-color-active;
+        border-color: @nav-text-color-active;
+    }
+    .btn-menu{
+        background-color: @component-background;
+        border-color: @body-background;
+    }
+
+
+
+    .slice-modal-wrapper-theme-light{
+        .charts-box {
+            background-color: transparent;
+        }
+    }
+
+    .slice-head-content{
+        &::before{
+            background-color: @nav-text-color-active;
+        }
+    }
+
+    #layout {
+      background: @body-background
+    }
+}

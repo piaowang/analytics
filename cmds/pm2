@@ -1,0 +1,25 @@
+#############################################
+### 生产模式将本文件放在cmds外层目录（跟app目录同级)
+#############################################
+
+#!/bin/bash
+cd `dirname $0`
+
+if command -v node > /dev/null 2>&1; then
+  NODE=`command -v node`
+
+elif command -v nodejs > /dev/null 2>&1; then
+  NODE=`command -v nodejs`
+
+else
+  NODE=`command -v ../node/bin/node`
+fi
+
+_PM2="$PWD/node_modules/.bin/pm2"
+if [ -x $_PM2 ]; then
+  _PM2=`command -v ./node_modules/.bin/pm2`
+else
+  _PM2=`command -v ../node_modules/.bin/pm2`
+fi
+
+exec "$NODE" "$_PM2" "$@";

@@ -1,0 +1,29 @@
+$path = "../../../../node_modules/sugo-analytics-static/assets/images/login-bg.png"
+body
+  background #fff
+  background-repeat no-repeat
+  background-position 50% 100%
+  background-image url($path)
+  background-image url($path), linear-gradient(to bottom, #feffff 0%,#f7f8fa 100%)
+
+#main
+  position: relative
+  z-index: 3
+
+#wrapper
+  width 1000px
+  margin 0 auto
+
+.center-content
+  background: rgba(255,255,255,.95)
+  border-left 1px solid #ddd
+  border-right 1px solid #ddd
+
+.menu
+  li a
+    display: inline-block
+    padding 10px 16px
+
+  li.on a
+    background: #ddd
+    border-radius: 3px 0 0 3px

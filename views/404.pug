@@ -1,0 +1,18 @@
+include includes/head1
+title 404 - #{siteName}
+style.
+  .main {
+    width: 800px;
+    margin: 30px auto
+  }
+
+include includes/head2
+include includes/browser-alert
+#wrapper
+  .main
+    h2 duang! #{hint || '404 没找到资源。。。'}
+    hr
+    p
+      a(href=host) 前往首页
+
+include includes/footer-end

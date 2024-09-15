@@ -1,0 +1,8 @@
+
+script.
+  try {
+    Object.defineProperty(window, "sugo", { value: Object.freeze(window.sugo), writable: false, configurable: false });
+  } catch (e) {
+    console.error(e)
+  }
+</body></html>

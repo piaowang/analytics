@@ -1,0 +1,35 @@
+@import '~antd/lib/style/themes/default.less';
+@icon-url: '/_bc/sugo-analytics-static/assets/antd/iconfont'; // 把 iconfont 地址改到本地
+@import '~antd/lib/style/core/index.less';
+@import '~antd/lib/style/components.less';
+@font-size-base         : 12px;
+@primary-color:#6969d7;
+@border-radius-base:4px;
+.ant-btn-success{
+    background-color: #1bb39c;
+    border-color: #1bb39c;
+    color: @btn-primary-color;
+    &:hover{
+        color: #fff;
+        background-color: #43d38e;
+        border-color: #43d38e;
+    }
+    &:focus{
+        background-color: #1bb39c;
+        border-color: #1bb39c;
+        color: @btn-primary-color;
+    }
+}
+
+
+@font-face {
+    font-family: "OPPOSans B";
+    src: url("/_bc/sugo-analytics-static/assets/fonts/echarts/OPPOSans-B.eot"); /* IE9 */
+    src: url("/_bc/sugo-analytics-static/assets/fonts/echarts/OPPOSans-B.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/_bc/sugo-analytics-static/assets/fonts/echarts/OPPOSans-B.woff") format("woff"), /* chrome, firefox */
+    url("/_bc/sugo-analytics-static/assets/fonts/echarts/OPPOSans-B.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("/_bc/sugo-analytics-static/assets/fonts/echarts/OPPOSans-B.svg#OPPOSans B") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+

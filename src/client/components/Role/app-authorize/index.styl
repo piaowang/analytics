@@ -1,0 +1,46 @@
+#app-authorize
+  overflow-x scroll
+  .app-selectbox 
+    display flex
+    flex-wrap wrap
+    .app-selectbox-item:hover
+      transform translate(5px, 5px)
+      box-shadow none
+      transition transform 0.5s
+    .app-selectbox-item
+      width 154px
+      height 118px
+      border 1px solid #ccc
+      border-radius 3%
+      box-shadow 5px 5px 0 1px rgba(154,118,170, 0.2)
+      .app-selectbox-item-top
+        height 82px
+        border-bottom 1px solid #ccc
+      .app-selectbox-item-bottom
+        text-align center
+        line-height 36px
+        height 36px 
+        font-size 12px
+  .app-authorize-pagination
+    float right
+  .app-authorize-treeselect
+    height 80px
+    line-height 80px
+    border-bottom 1px solid rgba(12,12,12,0.1)
+    position relative
+  .app-authorize-treeselect .ant-select-tree-dropdown
+    height 227px !important
+    top 55px !important
+  #app-authorize .app-authorize-treeselect
+    position absolute
+  .height40
+    height 40px !important
+    vertical-align middle
+  .ant-select-sm .ant-select-selection--multiple .ant-select-selection__clear, .ant-select-sm .ant-select-selection--multiple .ant-select-arrow
+    right 20px
+  .ant-select-sm .ant-select-selection--multiple
+    height 40px !important
+    overflow-y auto
+    overflow-x: hidden;
+
+// #app-authorize .ant-select-selection::-webkit-scrollbar {display:none}

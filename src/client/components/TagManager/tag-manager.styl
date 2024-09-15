@@ -1,0 +1,468 @@
+.tag-manager-wrap
+  .ug-wrapper
+    background none
+    & ::-webkit-scrollbar
+      display: block
+  .ug-info
+    margin-left 252px
+.tag-setion-wrap
+  padding 10px 10px 0 5px
+.tag-setion-inner
+  background #fff
+  border-radius 3px
+
+.tag-type-tree
+  position absolute
+  left 10px
+  bottom 0
+  top 10px
+  width 242px
+  background #fff
+  border-radius 3px
+.tag-type-tree-wrap
+  position absolute
+  left 0
+  top 89px
+  bottom 0
+  width 100%
+  padding-bottom 60px
+  overflow-y scroll
+
+.tag-tree-lv1
+  padding-left 18px
+  > .tag-tree-lv2-title
+  > .tag-tree-lv1
+    display none
+  &.active
+    > .tag-tree-lv1
+    > .tag-tree-lv2-title
+      display block
+.tag-tree-lv1-title
+  line-height 36px
+  font-size 14px
+  padding 0 16px
+  cursor pointer
+  background #fff
+  position relative
+  &:hover
+    color colorMain
+    .tag-tree-op-icon
+      display block
+      color #000
+.tag-tree-lv1-name
+  width 100%
+
+.tag-tree-lv2-title
+  cursor pointer
+  margin-left 26px
+  padding 0 16px 0 0
+  line-height 30px
+  position relative
+  .edit-group-tag
+    top 50%
+    margin-top -6px
+  .tag-icon
+    visibility hidden
+  &:hover
+    color colorMain
+    cursor pointer
+    .tag-tree-op-icon
+      display block
+      color #000
+  &.active
+    color colorMain
+    background-color #bae7ff
+    .tag-icon
+      visibility visible
+.no-active-underline
+  .tag-tree-lv2-title.active
+    background-color #fff
+
+.tag-tree-op-icon
+  display none
+  position absolute
+  top 12px
+
+.tag-dim-extra-info
+  color colorMain
+.edit-tag-icon
+  right 10px
+.del-tag-icon
+  right 27px
+
+.tag-filter-title
+  line-height 50px
+  font-size 14px
+  padding 0 16px
+
+.tag-filter-section
+  border-bottom 1px solid #eee
+.tag-filter-child-section
+  padding 0 32px 4px 0
+  border-bottom 1px solid #eee
+  position relative
+.tag-enhance-child-section
+  padding 0 32px 4px 0
+  position relative
+
+.tag-filter-name
+  width 100px
+  position absolute
+  left 16px
+  top 0
+  line-height 36px
+  height 36px
+  text-align right
+.tag-filter-content
+  margin-left 132px
+.tag-filter-item
+  background #eee
+  color #666
+  border-radius 3px
+  padding 0 5px
+  line-height 28px
+  margin 4px 4px 0 0
+  .pointer
+    color #aaa
+    &:hover
+      color #666
+
+
+.tag-select-items-content
+  padding-bottom 30px
+.tag-select-title
+  line-height 50px
+  font-size 14px
+  padding 0 16px
+  border-bottom 1px solid #eee
+.tag-select-items
+  min-height 660px
+
+.tag-select-item-dot
+  position absolute
+  left 28px
+  top 50%
+  margin-top -4px
+  width 8px
+  height 8px
+  border-radius 4px
+  background colorMain
+.tag-extra-info
+  p
+    margin-bottom 5px
+.tag-select-item-line
+  position absolute
+  left 32px
+  top 50%
+  width 120px
+  border-bottom 1px solid colorMain
+.tag-select-item-line-vertical
+  position absolute
+  left 32px
+  top -49px
+  width 1px
+  height 79px
+  background colorMain
+.tag-select-item-title
+  font-size 14px
+  .tag-select-item-dot
+    width 16px
+    height 16px
+    border-radius 8px
+    left 24px
+    margin-top -8px
+  .tag-select-item-line-vertical
+    top 50%
+    width 1px
+    height 100px
+.tag-select-item-box
+.tag-select-item-title-box
+  z-index 2
+  margin 0 32px 0 54px
+  border 1px solid colorMain
+  border-left-width 11px
+  border-radius 3px
+  padding-left 32px
+  line-height 98px
+  height 98px
+  background #fff
+  position relative
+
+.tag-select-item-title-box
+  .tag-select-item-count
+    left 310px
+    line-height 100px
+    right 210px
+  .tag-select-item-name
+    width 258px
+.tag-group-item-wrap
+  .tag-select-item-title-box
+    margin 0 32px
+    line-height 1.6
+    height auto
+  .tag-select-item-btn-wrap
+    line-height 100px
+  .tag-select-item-name
+    width auto
+    display block
+    margin-right 340px
+  .tag-select-item-count
+    left auto
+    width 400px
+    text-align right
+    padding-right 20px
+    right 120px
+.edit-group-tag
+  position absolute
+  right 10px
+  top 10px
+.del-group-tag
+  position absolute
+  right 30px
+  top 10px
+
+.tag-select-sort-icon-wrap
+  line-height 30px
+  font-size 12px
+  color #888
+  margin-top 20px
+  .name-sort
+    margin-left 96px
+    width 170px
+
+.tag-select-item
+  position relative
+  margin-bottom 20px
+.tag-select-item-name
+  width 160px
+.tag-select-item-count
+  position absolute
+  left 202px
+  top 0
+  right 270px
+  height 58px
+  line-height 60px
+.tag-select-item-chart
+  position absolute
+  right 116px
+  top -101px
+  width 98px
+  height 199px
+.tag-select-item-box
+  margin-left 64px
+  border-left-width 1px
+  height 58px
+  line-height 58px
+.tag-select-item-btn-wrap
+  position absolute
+  right 32px
+  top 0
+  height 58px
+.tag-group-btn-content-item
+  &:hover
+    background #f2f2f2
+.rm-tag-group-item
+  position absolute
+  right 16px
+  top 50%
+  margin-top -6px
+.tag-single-user
+  .tag-single-context
+    padding-top 20px
+  .tag-single-item-panel
+    margin-bottom 15px
+    margin-top 15px
+    .tag-single-tag-panel
+      width 400px
+      position relative
+    .tag-single-item-title-box
+      z-index 2
+      margin 0 0px 0 124px
+      border 1px solid #6969d7
+      border-left-width 11px
+      border-radius 3px
+      height 98px
+      line-height 98px
+      padding-left 20px
+      padding-right 20px
+      background #fff
+      font-size: 1.17em
+    .tag-single-item-line
+      position absolute
+      top 50%
+      border-bottom 1px solid colorMain
+      &.tag-single-item-line-title
+        left 64px
+        width 64px
+      &.tag-single-item-line-props
+        left 0px
+        position relative
+    .tag-single-prop-panel
+      left 400px
+      top 0px
+      position absolute
+      width 60%
+      max-width 780px
+      min-width 580px
+    .tag-single-prop-item
+      top 0px
+      left 0px
+      height 32px
+      margin 10px 200px 0 0
+      max-width 600px
+    .tag-single-item-prop-box
+      border 1px solid #6969d7
+      border-radius 3px
+      height 32px
+      line-height 32px
+      padding-left 23px
+      background #fff
+      margin 0 0 0 120px
+      width 65%
+      position relative
+      max-width 400px
+      min-width 200px
+    .tag-single-item-value-box
+      height 32px
+      line-height 32px
+      right 0px
+      position absolute
+      margin -32px 0px 0 0px
+      width 200px
+      background #fff
+      .tag-single-item-value
+        padding-left 15px
+      .tag-single-item-value-dot
+        top 50%
+        background colorMain
+        width 8px
+        height 8px
+        border-radius 4px
+        margin-left -10px
+        position relative
+        margin -36px 0px 0 0px
+    .tag-single-item-dot
+      position absolute
+      top 50%
+      &.tag-single-item-dot-title
+        left 57px
+        width 15px
+        height 15px
+        border-radius 8px
+        margin-top -8px
+        border 3px solid colorMain
+        background #fff
+        z-index 100
+        
+  .tag-single-item-line-vertical
+    width 1px
+    position absolute
+    margin-left 64px
+    width 1px
+    background colorMain
+  .tag-single-item-line-icon
+    width 10px
+    height 10px
+    border-radius 5px
+    position absolute
+    margin-left 60px
+    top 100px
+    background colorMain
+  .tag-single-title
+    margin-left 20px
+    span
+      font-size 1.17em
+      -webkit-margin-before 1em
+      -webkit-margin-after 1em
+      -webkit-margin-start 0px
+      -webkit-margin-end 0px
+      color: rgba(0, 0, 0, 0.85);
+    img
+      width 45px
+      margin-left 6px
+      border-radius 30px
+      border 1px solid colorMain
+
+.tag-manager-single-user
+  .blue-capsule
+    border: 1px solid colorMain
+    color colorMain
+    border-radius 12px
+    padding 3px 5px
+    margin 7px 0
+  .purple-capsule
+    border: 1px solid #970fdd
+    color #970fdd
+    border-radius 12px
+    padding 3px 5px
+    margin 7px 0
+  .green-capsule
+    border: 1px solid colorGreen
+    color colorGreen
+    border-radius 12px
+    padding 3px 5px
+    margin 7px 0
+  .user-action-event-detail-btn
+    display none
+  .user-action-event-item
+    &:hover
+      background #e4e5f9
+      .user-action-event-detail-btn
+        display: inline-block
+
+.tag-list-custom-order
+  &.types-order-panel
+    width 100%
+    overflow auto
+    padding 0 12px
+  &.tags-order-panel
+    width 100%
+    overflow auto
+    padding-left 8px
+  .order-label
+    border 1px solid #c4c6d2
+    cursor move
+    margin-bottom 4px
+    margin-right 4px
+    border-radius 4px
+    &.border-dashed
+      border 1px dashed gray
+    &.types-lable
+      height 36px
+      line-height 36px
+    &.tags-lable
+      height 25px
+      line-height 25px
+    .display-by-hover
+      display none
+  .order-label:hover
+    .display-by-hover
+      display inline-block
+
+.tag-top10
+  .tag-top10-reverse
+    text-align right
+    .ant-progress
+      transform: rotate(180deg)
+  .ant-progress-inner
+    background #aaa
+  .ant-progress-bg
+    background colorMain
+
+.tag-filter-op-in 
+  color #71b875
+.tag-filter-op-notin 
+  color #ff756c
+.tag-filter-op-equal
+  color #6969d7
+.tag-filter-op-alsoin 
+  color #53a5ff
+
+.tag-filter-model
+  height 60px
+  padding: 5px 12px
+  font-size: 14px
+  .blod
+    font-size: 14px
+    font-weight: 700
+    margin: 0 20px

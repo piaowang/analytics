@@ -1,0 +1,48 @@
+arrow-width = 16px
+control-padding-v = 4px
+item-width = 192px
+border-darker = hsl(0, 0%, 40%)
+
+.fancy-drag-indicator
+  position: absolute;
+  top 0
+  bottom 0
+  left 64px
+  right 0
+  pointer-events none
+
+  .drag-ghost-element
+    position absolute
+    // left: 0; It gets left from the JS
+    top control-padding-v
+    bottom control-padding-v
+    width item-width
+    //border: 2px solid rgba($border-darker, 0.14)
+    background rgba(border-darker, 0.14)
+    border-radius 4px
+
+  .drag-ghost-arrow
+    position absolute
+    // left: 0; It gets left from the JS
+    top -12px
+    width arrow-width
+    margin-left -(arrow-width/2)
+
+.tile
+  .fix-text
+    width calc(100% - 30px)
+
+.tile-filter-item
+  max-width 230px
+  width calc(100% - 30px)
+
+.panel
+  .ant-select-dropdown-menu-item
+    padding: 3px 10px
+
+.analytic-search-title
+  margin-left 10px
+  
+.anlytic-filter-menu
+  .ant-checkbox-wrapper
+    width 100%

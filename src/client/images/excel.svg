@@ -1,0 +1,17 @@
+<svg id="excel" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #8794a8;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="bg" class="cls-1" width="20" height="20"/>
+  <path id="icon_excel" class="cls-2" d="M1492.99,100h7V90h-4V86h-7v5h4v9Zm-9,2V91h3l-0.03-5.885a1.149,1.149,0,0,1,1.15-1.154h9.07L1501.99,88v12c0,0.637-.36,2-1,2h-17Zm16-13-3-3v3h3Zm-12.49,7.04-2.57,3.5h1.64l1.72-2.5,1.73,2.481h1.67l-2.57-3.481,2.45-3.273h-1.6l-1.64,2.343-1.57-2.343h-1.66Zm0,0" transform="translate(-1483 -83)"/>
+</svg>

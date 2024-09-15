@@ -1,0 +1,16 @@
+include includes/head1
+title 个人视图报告
+link(rel='stylesheet', href=cdn + '/css/mannings.styles.css?' + version)
+include includes/head2
+include includes/browser-alert
+#container
+#content-loading
+  .spinner
+    .bounce1
+    .bounce2
+    .bounce3
+
+include includes/footer-js
+
+script(onload='window.sugo.onload()', src=cdn + '/js/mannings.bundle.js' + '?' + version)
+include includes/footer-end

@@ -1,0 +1,358 @@
+/* port styling */
+.available-magnet 
+  fill: yellow
+
+
+/* element styling */
+.available-cell rect
+  stroke-dasharray: 5, 2
+
+.pio-g-card
+
+.pio-g-del
+  margin-left 20px
+
+.pio-context-menu
+  position: absolute
+  width 200px
+  background: #fff
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.05)
+  border 1px solid #eee
+  padding: 10px 0
+  z-index: 410
+
+.pio-tooltip
+  position: absolute
+  z-index 400
+  background: #fff
+  border 1px solid #eee
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.05)
+  padding 10px
+  border-radius 3px
+  width 300px
+  &:before
+    content: ""
+    position: absolute
+    border-style: solid
+    border-color: #eee transparent
+    display: block
+    width: 0
+    top: -8px
+    left 8px
+    border-width: 0 8px 8px
+  &:after
+    content: ""
+    position: absolute
+    border-style: solid
+    border-color: #fff transparent
+    display: block
+    width: 0
+    top: -7px
+    left: 9px
+    border-width: 0 7px 7px
+
+.pio-setting-panel
+  position: absolute
+  right 0
+  top 0
+  bottom 0
+  width 300px
+  z-index 223
+  background: #fff
+  border 1px solid #eee
+  border-top none
+  //box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.05)
+  .ant-form-item-label
+    text-align: left
+  .compare-opt-input
+    width 70px
+
+.pio-setting-footer
+  position: absolute
+  bottom: 0
+  height 70px
+  border-top 1px solid #eee
+  left 0
+  right 0
+
+.pio-setting-body
+  position: absolute
+  top 43px
+  bottom: 70px
+  left 0
+  right 0
+  overflow-y: scroll
+
+.pio-setting-title
+  padding 10px 20px
+
+.pio-layout
+  position: relative
+
+.pio-aside
+  position: absolute
+  left 0
+  top 0
+  width 186px
+  bottom 0
+  border-right 1px solid #eee
+  z-index 4
+  .operator-list
+    position: absolute
+    top 83px
+    bottom: 0
+    left 0
+    right 0
+    overflow-y: scroll
+#pio
+  .operator-children
+    display: none
+    >.operator-item
+      >h3
+        padding-left: 32px
+      .operator-child
+        padding-left: 48px
+
+  .operator-item
+    h3
+      margin 0 
+      padding 10px 16px
+      font-size: 14px
+      cursor: pointer
+      &:hover
+        background: #a38dbf
+        color: #fff
+    &.expanded>.operator-children
+      display: block
+
+  .operator-child
+    padding 6px 16px 6px 32px
+    font-size: 13px
+    cursor: pointer
+    &.last-clicked
+      background: #a38dbf
+    &:hover
+      background: #a38dbf
+      color: #fff
+  &.expanded>.operator-children
+    display: block
+
+.operator-child
+  padding 6px 16px 6px 32px
+  font-size: 13px
+  cursor: pointer
+  &.last-clicked
+    background: #a38dbf
+  &:hover
+    background: #a38dbf
+    color: #fff
+  .operator-list>.operator-item>h3
+    color: rgba(0, 0, 0, 0.65098)
+    background: #dcd4e6
+
+.pio-main
+  margin-left 187px
+  margin-right 300px
+  position: relative
+  z-index: 3
+
+.canvas-wrapper
+  overflow: scroll
+
+.pio-controls
+  border-bottom 1px solid #eee
+  padding-top 7px
+  padding-bottom: 7px
+
+.pio-results
+  position: absolute
+  left 0
+  top 0
+  bottom 0
+  right 0
+  background: #fff
+  z-index 320
+  overflow-y: scroll
+  &.animate-hide
+    height 0
+    overflow: hidden
+    transition all 0.5s
+
+.tree-wrapper
+  position: relative
+  min-height 5000px
+
+.d-tree-label
+  display: inline-block
+  position: relative
+
+.d-tree-label-text
+  display: inline-block
+  padding 10px 6px
+  width 140px
+  background: #fff
+
+.d-tree-condition-txt
+  position: relative
+  display: inline-block
+  z-index 10
+.d-tree-condition-line
+  content: ''
+  position: absolute
+  right: -30px
+  height: 70px
+  top: -43px
+  border-left: 1px solid #aaa
+  transform: rotate(55deg)
+  z-index 9
+
+.d-tree-condition
+  position: absolute
+  background: #fafafa
+  border-radius: 3px
+  right: -50px
+  top: -20px
+  z-index 10
+  overflow: visible
+
+.d-tree-child
+  margin-left 30px
+
+.d-tree-lv0
+  margin-left 400px
+  position: relative
+.d-tree-child
+  position: absolute
+  top 60px
+.d-tree-cell-0
+  right 140px
+  >.d-tree-child
+    display: none
+  &.d-tree-children-visible > .d-tree-child
+    display: block
+    z-index 20
+
+  > div > .d-tree-label > .d-tree-label-text
+    text-align: right
+.d-tree-cell-1
+  left 0
+  > div > .d-tree-label > .d-tree-label-text
+    text-align: center
+  > div > .d-tree-label > span > .d-tree-condition
+    right auto
+    left 40px
+  > div > .d-tree-label > span > .d-tree-condition-line
+      transform: rotate(-30deg)
+      right: auto
+      left 55px
+      top: -30px
+      height 40px
+
+.d-tree-cell
+  border-radius 3px
+  width 140px
+
+.counter-label
+  display: inline-block
+  padding 2px
+  border-radius: 3px
+.counter-map
+  padding: 1px 3px
+  font-size: 10px
+.counter-map-y
+  background: #1bb39c
+  color #eee
+  border-radius: 3px 0 0 3px
+.counter-map-n
+  background: #d9534f
+  color #eee
+  border-radius: 0 3px 3px 0
+
+.on-op-drag
+  line-height 34px
+  padding 0
+  height 34px
+  width 200px
+  text-align: center
+  background: #fff
+  border-radius: 34px
+  border 1px solid #aaa
+  .anticon
+    display: none
+
+.op-drag-shadow
+  border-style: dashed
+  position: absolute
+  z-index 112
+
+#process-list
+  & .ant-tabs-bar
+    background: #fff
+    border-bottom: 1px dashed #999
+    border-top: 1px dashed #999
+  & a
+    margin-left: 18px
+    &:first-of-type
+      margin-left: 0
+
+.pio-op1
+  background: #ebecef
+.pio-op0
+  background: #fefefe
+
+.pio-list-
+  &bgf5
+    background: #f5f5f5
+    overflow: auto
+  &pd
+    padding: 30px 98px    
+  &underline
+    text-decoration: underline
+    line-height: 24px
+    vertical-align: top
+  &case
+    background: #fff
+    float: left
+    margin-right: 42px
+    margin-bottom: 40px
+    width: 200px
+    border-radius: 2px
+  &case-title
+    line-height: 39px
+    padding: 0 20px
+    border-bottom: 1px solid #ddd
+    font-weight: bold
+  &case-icon
+    text-align: center
+    font-size: 72px
+    line-height: 190px
+  &add
+    width: 200px
+    height: 230px
+    text-align: center
+    background: colorGreen
+    color: #fff
+  &add-icon
+    font-size: 50px
+    line-height: 150px
+  &but-view
+    position: absolute
+    right: 98px
+    top: 30px
+
+.pio-list-case-icon .hover-display
+  background: rgba(255 255 255 0.7)
+  line-height: 36px
+  font-size: 12px
+  padding-top: 32px
+
+#pio-kmeans-result-tree .ant-tree-iconEle
+  &:after 
+    display: inline-block
+    font-family: 'anticon'
+  &.ant-tree-icon__docu:after 
+    content: "\E664"
+  &.ant-tree-icon__open:after 
+    content: "\E699"
+  &.ant-tree-icon__close:after 
+    content: "\E662"

@@ -1,0 +1,13 @@
+doctype html
+|<html>
+|<head>
+|<meta charset="UTF-8" />
+- var faviconUrl = favicon.indexOf('http') > -1 ? favicon : (favicon ? cdn + '/' + favicon : cdn + '/favicon.ico')
+|<link rel="shortcut icon" href="#{faviconUrl}">
+|<meta http-equiv="x-ua-compatible" content="IE=edge" />
+|<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+|<link rel="stylesheet" href="#{cdn}/_bc/sugo-analytics-static/assets/fonts/iconfont.css?#{version}">
+|<link rel="stylesheet" href="#{cdn}/css/common-css.styles.css?#{version}">
+- if ((uaArr || []).includes('not-ok-browser'))
+  |<script src="#{cdn}/_bc/@babel/polyfill/dist/polyfill.min.js"></script>
+  |<script src="#{cdn}/_bc/whatwg-fetch/dist/fetch.umd.js"></script>

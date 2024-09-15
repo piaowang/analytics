@@ -1,0 +1,84 @@
+@import "./variables.styl"
+
+// gaps
+gap(name, type, size)
+  .gap-{name}
+    {type} size
+  .gap-{name}-x
+    {type}-left size
+    {type}-right size
+  .gap-{name}-y
+    {type}-top size
+    {type}-bottom size
+  .gap-{name}-left
+    {type}-left size
+  .gap-{name}-right
+    {type}-right size
+  .gap-{name}-top
+    {type}-top size
+  .gap-{name}-bottom
+    {type}-bottom size
+
+gap(pd-small, padding, gap-small)
+gap(pd-base, padding, gap-base)
+gap(pd-large, padding, gap-large)
+
+gap(mg-small, margin, gap-small)
+gap(mg-base, margin, gap-base)
+gap(mg-large, margin, gap-large)
+
+// dispaly
+.display-inline
+  display inline
+
+.display-inline-block
+  display inline-block
+
+.display-block
+  display block
+
+// width
+.width-base
+  width width-base
+
+.width-small
+  width width-small
+
+.width-large
+  width width-large
+
+.width-percent-100
+  width 100%
+
+.height-percent-100
+  height 100%
+
+// border
+.border-bottom
+  border-bottom 1px solid border-color
+  border-top 0
+  border-right 0
+  border-left 0
+
+.border-top
+  border-top 1px solid border-color
+  border-right 0
+  border-bottom 0
+  border-left 0
+
+.border-style-dotted
+  border-style dotted
+
+.border-style-dashed
+  border-style dashed
+
+// overflow
+.overflow-auto
+  overflow auto
+
+.overflow-auto-y
+  overflow-y auto
+
+.overflow-auto-x
+  overflow-x auto
+

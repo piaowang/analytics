@@ -1,0 +1,191 @@
+bg-item-hover = #e4e5f9
+
+.insight-main .nav-bar
+  padding-left 16px
+  padding-right 16px
+
+.insight-wrapper
+  height calc(100% - 40)
+
+.insight-top-bar
+  border-bottom 1px solid #ddd
+  position: relative
+  z-index: 12
+
+.insight-users
+  position: absolute
+  left 0
+  top 0
+  width 250px
+  bottom 0
+  background: #fafbfd
+  box-shadow 0 0 3px 1px rgba(0, 0, 0, 0.1)
+  z-index 6
+  ::-webkit-scrollbar
+    display: none
+
+.insight-user-list
+  padding-bottom 20px
+  overflow-y scroll
+  overflow-x: visible
+
+.insight-user
+  cursor pointer
+  padding: 10px 16px
+  position: relative
+  &:nth-child(even)
+    background: #f1f2f6
+  &.on
+    background: colorMain
+    padding: 12px 16px
+    font-weight: bold
+    color #fff
+    .anticon
+      font-size: 20px
+  &:hover
+    background: colorMain
+    color #fff
+
+.insight-event-dates
+  position: absolute
+  left 250px
+  top 0
+  width 300px
+  height 100%
+  bottom 0
+  box-shadow 0 0 3px 1px rgba(0, 0, 0, 0.1)
+  z-index 5
+  background: #fafbfd
+  ::-webkit-scrollbar
+    display: none
+
+.insight-session-content
+  z-index 7
+
+.insight-date-str
+  margin-right 10px
+
+.insight-dates-list
+  overflow-y: scroll
+  padding-bottom 20px
+
+.insight-session-line
+.insight-dates-line
+  position: absolute
+  left 105px
+  top 0
+  bottom 0
+  border-left 1px solid #eee
+  z-index 6
+
+.insight-date
+  position: relative
+  cursor pointer
+  width 100%
+  padding 5px 16px
+  margin-bottom 2px
+  &.on
+    font-weight: bold
+    background bg-item-hover
+  &:hover
+    border-color colorMain
+
+.insight-date-bg
+  height 20px
+  border-radius 4px
+  background: colorMain
+
+.insight-date-dot
+  position relative
+  border: 2px solid #999
+  margin-right 12px
+  border-radius 20px
+  height 16px
+  width 16px
+  background #fff
+  &:before
+    content ""
+    position absolute
+    width 8px
+    height 8px
+    border-radius 4px
+    left 2px
+    top 2px
+    background #999
+
+.insight-date-content
+  height 30px
+  line-height 30px
+
+.insight-date-count
+  position: absolute
+  right 2px
+  top 0
+
+.insight-events
+  padding-bottom 20px
+  position: absolute
+  left 550px
+  top 0
+  right 0
+  height 100%
+  box-shadow 0 0 3px 1px rgba(0, 0, 0, 0.1)
+  z-index 4
+  background #f5f6fa
+
+.insight-event-list
+  padding-bottom 20px
+  position: absolute
+  top 57px
+  left 0
+  width 100%
+  bottom 0
+  overflow-y: scroll
+
+.insight-event-header
+  line-height: 50px
+  height: 54px
+
+.insight-event-time
+  width 80px
+
+.insight-event-item
+  position relative
+  cursor pointer
+  padding-left 24px
+  padding-top: 10px
+  padding-bottom: 10px
+  .insight-detail-btn
+    position: absolute
+    right 10px
+    top 10px
+  &:nth-child(even)
+    background #eeeff4
+  .insight-detail-btn
+    display: none
+  &:hover
+    background bg-item-hover
+    .insight-detail-btn
+      display: inline-block
+
+.insight-detail
+  max-height 500px
+  width: 500px
+  overflow-y: scroll
+
+.insight-day-title,
+.insight-session-start,
+.insight-session-end
+  padding-left 24px
+  padding-bottom 10px
+
+.insight-detail-content
+  position: absolute
+  right 50px
+  left 98px
+  top 12px
+
+.insight-session-line
+  left 30px
+  top 60px
+  bottom 60px
